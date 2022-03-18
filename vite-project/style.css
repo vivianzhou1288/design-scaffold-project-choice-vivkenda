@@ -1,0 +1,77 @@
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+:root {
+  --plain: #ffffff;
+  --light-grey: #d3d3d3;
+  --light-blue: #e5f0fa;
+  --dark-blue: #5498f6d3;
+  --light-red: #f8acac;
+  --dark-red: #e91313;
+  --light-green: #c0eec1;
+  --dark-green: #058709;
+  --light-yellow: #e7e7a3;
+  --light-purple: #e4b6eb;
+  --light-brown: #c99589;
+  --teal: #008080;
+
+  /* Intentions */
+  --primary: var(--light-blue);
+  --secondary: var(--dark-blue);
+
+  /* Typography */
+  --h1: 7.594rem;
+  --h2: 5.063rem;
+  --h3: 3.375rem;
+  --h4: 2.25rem;
+  --h5: 1.5rem;
+  --font-family: "Orbitron", sans-serif;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  height: 75rem;
+  left: 0rem;
+  top: 0rem;
+
+  background: #453e3e;
+}
+h1 {
+  position: absolute;
+  width: 226px;
+  height: 60px;
+  top: 71px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+.home {
+  left: 144px;
+}
+.culture {
+  left: 351px;
+}
+.attractions {
+  left: 596px;
+}
+.cuisine {
+  left: 830px;
+}
+.about {
+  left: 1039px;
+}
