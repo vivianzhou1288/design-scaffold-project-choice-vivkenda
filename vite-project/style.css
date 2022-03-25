@@ -8,18 +8,9 @@ body,
 }
 
 :root {
-  --plain: #ffffff;
-  --light-grey: #d3d3d3;
-  --light-blue: #e5f0fa;
-  --dark-blue: #5498f6d3;
-  --light-red: #f8acac;
-  --dark-red: #e91313;
-  --light-green: #c0eec1;
-  --dark-green: #058709;
-  --light-yellow: #e7e7a3;
-  --light-purple: #e4b6eb;
-  --light-brown: #c99589;
-  --teal: #008080;
+  --grey: #424242;
+  --light-grey: #a09797;
+  --white: #ffffff
 
   /* Intentions */
   --primary: var(--light-blue);
@@ -31,7 +22,7 @@ body,
   --h3: 3.375rem;
   --h4: 2.25rem;
   --h5: 1.5rem;
-  --font-family: "Orbitron", sans-serif;
+  --font-family: "Montserrat", sans-serif;
 }
 
 .navbar {
@@ -41,15 +32,15 @@ body,
   left: 0rem;
   top: 0rem;
 
-  background: #453e3e;
+  background: var(--grey);
 }
-h1 {
+.navbar h1 {
   position: absolute;
   width: 14.125rem;
   height: 3.75rem;
   top: 1.75rem;
 
-  font-family: "Montserrat";
+  font-family: var(--font-family);
   font-style: normal;
   font-weight: 400;
   font-size: 2.5rem;
@@ -78,9 +69,14 @@ h1 {
 header {
   position: absolute;
   width: 100%;
-  height: 70rem;
+  height: 110rem;
   left: 0rem;
   top: 7rem;
 
-  background: url("https://cdn.odysseytraveller.com/app/uploads/2019/07/great-wall-of-china.jpg");
+  background: url("https://assets.cntraveller.in/photos/60ba24650f3a5367ec9fe8e8/master/pass/The-Great-Wall-1.jpg");
+}
+.header h1{
+  font-family: var(--font-family);
+  font-size: 15rem;
+  font-weight: 400;
 }
