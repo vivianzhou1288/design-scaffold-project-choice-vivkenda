@@ -131,11 +131,24 @@ body {
 }
 .facts {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  margin-top: 255rem;
+  margin-top: 233rem;
+  justify-content: center;
   
   font-family: var(--font-family);
   font-size: 6rem;
 }
-
+.facts img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  margin-bottom: 2.5rem;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 7rem;
+  text-align: center;
+}
