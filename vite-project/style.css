@@ -47,7 +47,7 @@ body,
   top: 15px;
   border-radius: 100%;
 }
-.navbar h1 {
+.navbar a{
   position: absolute;
   width: 14.125rem;
   height: 3.75rem;
@@ -63,6 +63,7 @@ body,
   text-align: center;
 
   color: #ffffff;
+  text-decoration: none;
 }
 .home {
   left: 11rem;
@@ -95,7 +96,7 @@ body {
   position: absolute;
   text-align: center;
   justify-content: center;
-  top: 45%;
+  top: 39%;
   left: 50%;
   transform: translate(-50%,-50%);
   font-family: var(--font-family)
