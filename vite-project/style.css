@@ -9,8 +9,9 @@ body,
 
 :root {
   --grey: #424242;
-  --light-grey: #a09797;
+  --light-grey: #A09797;
   --white: #ffffff
+  --red: #F25E5E
 
   /* Intentions */
   --primary: var(--light-blue);
@@ -34,6 +35,14 @@ body,
 
   background: var(--grey);
 }
+.navbar img {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 30px;
+  top: 15px;
+  border-radius: 100%;
+}
 .navbar h1 {
   position: absolute;
   width: 14.125rem;
@@ -43,7 +52,7 @@ body,
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 400;
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 2rem;
   display: flex;
   align-items: center;
@@ -52,19 +61,16 @@ body,
   color: #ffffff;
 }
 .home {
-  left: 9rem;
+  left: 11rem;
 }
 .culture {
-  left: 22rem;
+  left: 23rem;
 }
 .attractions {
-  left: 37.25rem;
+  left: 38rem;
 }
 .cuisine {
-  left: 57rem;
-}
-.about {
-  left: 70.5rem;
+  left: 58rem;
 }
 header {
   position: absolute;
@@ -72,8 +78,10 @@ header {
   height: 110rem;
   left: 0rem;
   top: 7rem;
-
+}
+body {
   background: url("https://assets.cntraveller.in/photos/60ba24650f3a5367ec9fe8e8/master/pass/The-Great-Wall-1.jpg");
+  background-repeat: no-repeat;
 }
 .header h1{
   font-family: var(--font-family);
@@ -81,6 +89,53 @@ header {
   font-weight: 400;
 }
 .header-img{
-
-
+  width: 30rem;
+  height: 30rem;
+  object-fit: cover;
+  margin: 5rem;
+  box-shadow: var(--light-grey) -2.5rem -2.5rem;
 }
+.top-imgs {
+  display: flex;
+  justify-content: center;
+  margin-top: 80rem;
+}
+.china-subheader {
+  position: absolute;
+  font-family: var(--font-family);
+  font-size: 7rem;
+  font-weight: 80px;
+  transform: rotate(-90deg);
+  top: 180rem;
+  left: 3rem;
+  color: white;
+  background-color: #F25E5E;
+  line-height: 12rem;
+  text-align: right;
+  padding-right: 5rem;
+  padding-left: 55rem;
+}
+.subheader1 {
+  position: absolute;
+  font-family: var(--font-family);
+  font-size: 5rem;
+  width: 1rem;
+  top: 148rem;
+  left: 56rem;
+}
+.mapOfChina {
+  width: 90rem;
+  position: absolute;
+  top: 160rem;
+  left: 68rem;
+}
+.facts {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 255rem;
+  
+  font-family: var(--font-family);
+  font-size: 6rem;
+}
+
