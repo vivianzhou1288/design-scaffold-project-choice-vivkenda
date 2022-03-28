@@ -1,0 +1,101 @@
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+:root {
+  --grey: #424242;
+  --light-grey: #a09797;
+  --white: #ffffff
+
+  /* Intentions */
+  --primary: var(--light-blue);
+  --secondary: var(--dark-blue);
+
+  /* Typography */
+  --h1: 7.594rem;
+  --h2: 5.063rem;
+  --h3: 3.375rem;
+  --h4: 2.25rem;
+  --h5: 1.5rem;
+  --font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  height: 7rem;
+  left: 0rem;
+  top: 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 6%;
+
+  background: var(--grey);
+}
+.navbar img{
+  width: 4rem;
+  left: 5rem;
+}
+.links {
+  flex: 1;
+  text-align: left;
+  width: 15rem;
+  height: 3.75rem;
+  top: 1.75rem;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+.links h1{
+  padding: 3rem;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  height: 110rem;
+  left: 0rem;
+  top: 7rem;
+  justify-content: center;
+  text-align: center;
+}
+
+body{
+  background: url("https://assets.cntraveller.in/photos/60ba24650f3a5367ec9fe8e8/master/pass/The-Great-Wall-1.jpg") no-repeat;
+}
+.text-box{
+  color: white;
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-family: var(--font-family)
+}
+.text-box h1{
+  font-size: 12rem;
+}
+.text-box h2{
+  font-size: 3.5rem;
+  font-family: 'Cormorant SC', serif;
+}
+
+.header-img{
+
+
+}
