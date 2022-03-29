@@ -1,30 +1,4 @@
-html,
-body,
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-size: 62.5%;
-}
-
-:root {
-  --grey: #424242;
-  --light-grey: #A09797;
-  --white: #ffffff
-  --red: #F25E5E
-
-  /* Intentions */
-  --primary: var(--light-blue);
-  --secondary: var(--dark-blue);
-
-  /* Typography */
-  --h1: 7.594rem;
-  --h2: 5.063rem;
-  --h3: 3.375rem;
-  --h4: 2.25rem;
-  --h5: 1.5rem;
-  --font-family: "Montserrat", sans-serif;
-}
+@import url("variable.css");
 
 .navbar {
   position: absolute;
@@ -47,7 +21,7 @@ body,
   top: 15px;
   border-radius: 100%;
 }
-.navbar a{
+.navbar a {
   position: absolute;
   width: 14.125rem;
   height: 3.75rem;
@@ -77,7 +51,7 @@ body,
 .cuisine {
   left: 58rem;
 }
-.groot{
+.groot {
   left: 72rem;
 }
 header {
@@ -91,25 +65,25 @@ body {
   background: url("https://assets.cntraveller.in/photos/60ba24650f3a5367ec9fe8e8/master/pass/The-Great-Wall-1.jpg");
   background-repeat: no-repeat;
 }
-.text-box{
+.text-box {
   color: white;
   position: absolute;
   text-align: center;
   justify-content: center;
   top: 39%;
   left: 50%;
-  transform: translate(-50%,-50%);
-  font-family: var(--font-family)
+  transform: translate(-50%, -50%);
+  font-family: var(--font-family);
 }
-.text-box h1{
+.text-box h1 {
   font-size: 12rem;
 }
-.text-box h2{
+.text-box h2 {
   font-size: 3.5rem;
-  font-family: 'Cormorant SC', serif;
+  font-family: "Cormorant SC", serif;
 }
 
-.header-img{
+.header-img {
   width: 30rem;
   height: 30rem;
   object-fit: cover;
@@ -130,7 +104,7 @@ body {
   top: 180rem;
   left: 3rem;
   color: white;
-  background-color: #F25E5E;
+  background-color: #f25e5e;
   line-height: 12rem;
   text-align: right;
   padding-right: 5rem;
@@ -155,7 +129,7 @@ body {
   align-items: center;
   margin-top: 233rem;
   justify-content: center;
-  
+
   font-family: var(--font-family);
   font-size: 6rem;
 }
