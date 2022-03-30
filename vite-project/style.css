@@ -152,6 +152,22 @@ body {
   margin: 7rem;
   text-align: center;
 }
+.more-info {
+  display: grid;
+  grid-template-columns: [first] 40rem [line2] 67rem [line3] auto [four] 40rem [end];
+  grid-template-rows: [first-line] 50% [middle-line] 50% [last-line];
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
 .panda {
-  
+  grid-column-start: line2;
+}
+.building {
+  grid-column-start: line3;
+  grid-row-start: row1-start;
+}
+.chongqing {
+  grid-template-columns: line3;
+  grid-row-start: row1-end;
+  width: 40px;
 }
