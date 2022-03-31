@@ -74,3 +74,9 @@ body {
   line-height: 9rem;
   font-family: var(--font-family);
 }
+.hotpot img {
+  position: absolute;
+  top: 100rem;
+  left: 55rem;
+  width: 77rem;
+}
