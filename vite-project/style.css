@@ -185,3 +185,11 @@ body {
   height: 25rem;
   object-fit: cover;
 }
+.panda-text {
+  grid-column-start: line2;
+  grid-row-end: last-line;
+  font-family: var(--font-family);
+  font-size: 4rem;
+  width: 70rem;
+  color: white; 
+}
