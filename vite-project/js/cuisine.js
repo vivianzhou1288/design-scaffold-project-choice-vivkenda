@@ -59,6 +59,19 @@ const food = [
     name: "Drunken Noodles",
   },
   {
-    img: "../images",
+    img: "../images/4554.jpg",
+    name: "Hot and Sour Soup",
+  },
+  {
+    img: "../images/1034.jpg",
+    name: "Honey Walnut Shrimp",
+  },
+  {
+    img: "../images/9916.jpg",
+    name: "Roast Pork",
+  },
+  {
+    img: "../images/9922.jpg",
+    name: "Egg Tofu",
   },
 ];
