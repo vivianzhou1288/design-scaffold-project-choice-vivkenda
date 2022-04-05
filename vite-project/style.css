@@ -190,8 +190,17 @@ body {
   grid-column-end: line3;
   grid-row-end: last-line;
   font-family: var(--font-family);
-  font-size: 4rem;
   width: 70rem;
   color: white; 
-  background-color: var(--light-grey);
+  background-color: rgba(66,66,66, 0.6);
+  margin-top: 15rem;
 }
+.panda-text h5 {
+  font-size: 3rem;
+  margin-left: 2rem;
+}
+.panda-text h6 {
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+
