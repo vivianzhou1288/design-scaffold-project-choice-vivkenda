@@ -76,9 +76,13 @@ body {
 }
 .hotpot img {
   position: absolute;
-  top: 100rem;
-  left: 55rem;
-  width: 77rem;
+  top: 95rem;
+  left: 45rem;
+  width: 100rem;
+  padding: 10rem;
+  border: 3px solid #000000;
+  border-right-style: none;
+  border-left-style: none;
 }
 .display-card img {
   position: absolute;
