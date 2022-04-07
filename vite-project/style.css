@@ -192,8 +192,9 @@ body {
   font-family: var(--font-family);
   width: 70rem;
   color: white; 
-  background-color: rgba(66,66,66, 0.6);
-  margin-top: 15rem;
+  background-color: #42424299;
+  margin: 14.2rem auto;
+  padding: 1rem 0rem 1.3rem 0rem;
 }
 .panda-text h5 {
   font-size: 3rem;
@@ -201,6 +202,35 @@ body {
 }
 .panda-text h6 {
   font-size: 2rem;
-  margin-left: 2rem;
+  margin: 0rem 2rem 0rem 2rem;
 }
-
+.building-text {
+  grid-column-start: line3;
+  grid-row-start: first-line;
+  grid-row-end: middle-line;
+  color: white;
+  font-family: var(--font-family);
+  background-color: #42424299;
+  width: 40rem;
+  margin: 17rem auto  0rem 0rem;
+  padding: 0.5rem 0rem 0.7rem 0rem;
+}
+.sub1 {
+  font-size: 2.5rem;
+  margin-left: 1rem;
+}
+.desc {
+  font-size: 1.5rem;
+  margin: 0rem 1rem 0rem 1rem;
+}
+.chongqing-text {
+  grid-column-start: line3;
+  grid-row-start: middle-line;
+  grid-row-end: last-line;
+  color: white;
+  font-family: var(--font-family);
+  width: 40rem;
+  background-color: #42424299;
+  margin: 17rem auto 0rem 0rem;
+  padding: 0.5rem 0rem 0rem 0rem;
+}
