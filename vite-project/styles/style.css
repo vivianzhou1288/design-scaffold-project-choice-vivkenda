@@ -127,6 +127,7 @@ header {
   top: 160rem;
   left: 68rem;
 }
+
 .facts {
   display: flex;
   align-items: center;
@@ -191,3 +192,13 @@ header {
   width: 70rem;
   color: white;
 }
+
+.links:hover{
+  color:#f25e5e;
+  font-weight:bold;
+}
+
+path:hover {
+  fill:#f25e5e;
+  cursor:pointer;
+};
