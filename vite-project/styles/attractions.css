@@ -94,6 +94,7 @@
   color: white;
   opacity: 1;
   transform: scale(1);
+  font-family: var(--font-family);
 }
 
 .box img {
