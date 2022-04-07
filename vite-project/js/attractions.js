@@ -1,14 +1,9 @@
 import "../styles/attractions.css";
 import { gsap } from "gsap";
 
-gsap.to(".box", 1, {
-  scale: 1,
-  opacity: 1,
-  yoyo: true,
+gsap.from(".box", 1, {
+  scale: 0.1,
+  opacity: 0,
   y: 60,
   ease: "power1.inOut",
-  stagger: {
-    amount: 1.5,
-    from: "left",
-  },
 });
