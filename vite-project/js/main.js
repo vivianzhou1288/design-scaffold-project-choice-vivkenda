@@ -1,7 +1,10 @@
 import "../styles/style.css";
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const tl = gsap.timeline({ delay: 0.3 });
+gsap.registerPlugin(ScrollTrigger);
 
 tl.from(".words", {
   opacity: 0,
@@ -10,8 +13,18 @@ tl.from(".words", {
   stagger: 0.4,
 });
 
-tl.to(
+gsap.to(
   ".header-img",
-  { y: -25, opacity: 1, duration: 4, ease: "elastic", stagger: 0.3 },
+  {
+    scrollTrigger: {
+      trigger: ".words",
+      start: "bottom center",
+    },
+    y: -25,
+    opacity: 1,
+    duration: 4,
+    ease: "elastic",
+    stagger: 0.3,
+  },
   "-=1.5"
 );
