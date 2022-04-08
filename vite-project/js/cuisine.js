@@ -77,12 +77,12 @@ const food = [
 ];
 const DOMSelectors = {
   display: document.querySelector(".display"),
-  displayCard: document.querySelector("#display-card"),
+  displayCard: document.querySelector(".display-card"),
 };
 function displayCard(food) {
   return `<div class="display-card">
-  <img src="${food.img}>
-  <h2>${food.name}</h2>
+  <img src="${food.img}">
+  <h2>"${food.name}"</h2>
   </div>;`;
 }
 function newCard() {
