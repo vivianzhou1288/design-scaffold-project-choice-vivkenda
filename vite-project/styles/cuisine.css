@@ -60,10 +60,11 @@ header {
   left: 0rem;
   top: 7rem;
 }
-body {
+header {
   background: url("../img/cup.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  max-height:75%;
 }
 .cuisine-subheader {
   font-size: 10rem;
@@ -84,10 +85,5 @@ body {
   border-right-style: none;
   border-left-style: none;
 }
-.display-card img {
-  position: absolute;
-  width: 342px;
-  height: 317px;
-  left: 357px;
-  top: 1849px;
-}
+
+
