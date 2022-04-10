@@ -55,17 +55,5 @@
   left: 72rem;
 }
 
-svg {
-  max-width:500px;
-  margin:0 auto;
-  display:block;
-}
 
-path {
-    fill: #CCC;
-    transition: 0.3s fill ease-out;
-}
-    
-path:hover {
-    fill: #E29352;
-}
+
