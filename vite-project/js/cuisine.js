@@ -5,30 +5,44 @@ const food = [
   {
     img: "../images/964.jpg",
     name: "Cong You Bing",
+    description:
+      "Cong You Bing is also known as scallion pancake or green onion pancake. It is a Chinese, savory, unleavened flatbread with minced scallions, and is ususally pan-fried.",
   },
   {
     img: "../images/963.jpg",
     name: "Peking Duck",
+    description:
+      "Peking Duck is a dish that originated in Beijing. It consists of thin roasted duck meat and strips of crispy duck skin topped with scallions and sauce. It is usually wrapped in thin pancakes.",
   },
   {
     img: "../images/965.jpg",
     name: "Red Braised Pork Belly",
+    description:
+      "Red Braised Pork Belly, also known as hong shao rou, is a classic pork dish from mainland China. The dish consists of a combination of red-cooked pork, ginger, garlic, aromatic spices, chilies, sugar, star anise, light and dark soy sauce, and rice wine.",
   },
   {
     img: "../images/966.jpg",
     name: "Stir-Fried Rice Cakes",
+    description:
+      "Stir-fried rice cakes, also known as Chao Nian Gao, is typically eaten during Chinese New Year since it is considered to bring good luck and fortune fo the new year.",
   },
   {
     img: "../images/967.jpg",
     name: "Chow Mein",
+    description:
+      "Chow mein, or Chinese stir-fried noodles consists of noodles, vegatables, and sometimes meat or tofu.Over the centuries, many variations of Chow Mein were developed in many regions of China. Chow Mein was introduced to other countries by Chinese immigrants.",
   },
   {
     img: "../images/1032.jpg",
     name: "Sichuan Mala Chicken",
+    description:
+      "Sichuan Mala Chicken, or La Zi Ji, is a Sichuan dish that is popular in China. The chicken is usually coated with spices and stir-fried in dried chili peppers. Not recommended for people who cannot handle the heat 😤.",
   },
   {
     img: "../images/998.jpg",
     name: "Mapo Tofu",
+    description:
+      "Mapo Tofu is a popular Chinese dish from the Sichuan province. The dish consists of tofu in a spicy sauce, based on douban and douchi, along with minced meat.",
   },
   {
     img: "../images/1033.jpg",
@@ -87,6 +101,7 @@ food.forEach((food) => {
     `<div class="display-card">
     <img class="display-img"src="${food.img}">
     <h2 class="display-name" >${food.name}</h2>
+    <h3 class="description">${food.description}</h3>
     </div>;`
   );
 });
