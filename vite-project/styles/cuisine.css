@@ -64,7 +64,7 @@ header {
   background: url("../img/cup.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  max-height:75%;
+  max-height: 75%;
 }
 .cuisine-subheader {
   font-size: 10rem;
@@ -91,20 +91,29 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top:100rem;
+  margin-top: 100rem;
   margin-bottom: 20rem;
   flex-wrap: wrap;
 }
 
 .display-card {
-  margin-left: 2rem;
-  width: 30%;
-  margin-right: 2rem;
+  margin-left: 5rem;
+  width: 40rem;
+  margin-right: 5rem;
   margin-bottom: 6rem;
-  padding-bottom: 8rem;
+  padding-bottom: 6rem;
   background-color: black;
-  color: white;
   justify-content: center;
+
+  transform: preserve-3d;
+  transition: all 0.5s ease;
+}
+.display-name {
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+  font-family: var(--font-family);
+  margin-top: 2.5rem;
 }
 
 .display-card img {
@@ -114,3 +123,15 @@ header {
   object-fit: cover;
 }
 
+.front-card {
+  backface-visibility: hidden;
+}
+
+.back-card {
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+.display-card:hover {
+  transform: rotateY(180deg);
+}

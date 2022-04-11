@@ -190,7 +190,7 @@ header {
   grid-row-end: last-line;
   font-family: var(--font-family);
   width: 70rem;
-  color: white; 
+  color: white;
   background-color: #42424299;
   margin: 14.2rem auto;
   padding: 1rem 0rem 1.3rem 0rem;
@@ -211,7 +211,7 @@ header {
   font-family: var(--font-family);
   background-color: #42424299;
   width: 40rem;
-  margin: 17rem auto  0rem 0rem;
+  margin: 17rem auto 0rem 0rem;
   padding: 0.5rem 0rem 0.7rem 0rem;
 }
 .sub1 {
@@ -234,9 +234,9 @@ header {
   padding: 0.5rem 0rem 0rem 0rem;
 }
 
-.links:hover{
-  color:#f25e5e;
-  font-weight:bold;
+.links:hover {
+  color: #f25e5e;
+  font-weight: bold;
 }
 
 path {
@@ -248,5 +248,5 @@ path {
 }
 
 path:hover {
-  fill:#f25e5e;
-};
+  fill: #f25e5e;
+}
