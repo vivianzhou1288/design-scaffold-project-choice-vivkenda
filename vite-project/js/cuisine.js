@@ -79,16 +79,14 @@ const DOMSelectors = {
   display: document.querySelector(".display"),
   displayCard: document.querySelector(".display-card"),
 };
-function displayCard(food) {
-  return `<div class="display-card">
-  <img src="${food.img}">
-  <h2>"${food.name}"</h2>
-  </div>;`;
-}
-function newCard() {
-  food.forEach((food) => {
-    console.log(food);
-    DOMSelectors.display.insertAdjacentHTML("afterbegin", displayCard(food));
-  });
-}
-newCard();
+
+food.forEach((food) => {
+  console.log(food);
+  DOMSelectors.display.insertAdjacentHTML(
+    "afterbegin",
+    `<div class="display-card">
+    <img class="display-img"src="${food.img}">
+    <h2 class="display-name" >${food.name}</h2>
+    </div>;`
+  );
+});
