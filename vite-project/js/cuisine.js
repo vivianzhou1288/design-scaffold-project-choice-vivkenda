@@ -98,10 +98,14 @@ food.forEach((food) => {
   console.log(food);
   DOMSelectors.display.insertAdjacentHTML(
     "afterbegin",
-    `<div class="display-card">
-    <img class="display-img"src="${food.img}">
-    <h2 class="display-name" >${food.name}</h2>
-    <h3 class="description">${food.description}</h3>
-    </div>;`
+    `<div class="card-container">
+    <div class="card">
+        <div class="front">
+  <img class = "display-img" src="${food.img}" alt="">
+          <h1 class="card-title">${food.name}</h1>
+        </div>
+        <div class="back"><h1 class="description">sjadksfhaebjbf Back jdafksygdj descriptions jskashdashf</h1></div>
+    </div>
+  </div> `
   );
 });

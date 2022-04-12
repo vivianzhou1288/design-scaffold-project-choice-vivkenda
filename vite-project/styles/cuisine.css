@@ -64,7 +64,7 @@ header {
   background: url("../img/cup.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  max-height:75%;
+  max-height: 75%;
 }
 .cuisine-subheader {
   font-size: 10rem;
@@ -86,31 +86,80 @@ header {
   border-left-style: none;
 }
 
-.display {
+.display{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top:100rem;
+  margin-top: 100rem;
   margin-bottom: 20rem;
   flex-wrap: wrap;
 }
-
-.display-card {
-  margin-left: 2rem;
-  width: 30%;
-  margin-right: 2rem;
-  margin-bottom: 6rem;
-  padding-bottom: 8rem;
-  background-color: black;
-  color: white;
+.card-container {
+  display: inline-block;
   justify-content: center;
+  align-items: center;
+  perspective: 90rem;
+}
+.card {
+position: relative;
+width: 35rem;
+height: 35rem;
+margin-left: 5rem;
+margin-right: 5rem;
+margin-bottom: 20rem;
+transition: all 1.5s ease;
+transform-style: preserve-3d;
 }
 
-.display-card img {
+.front, .back {
+  position: absolute;
+  background-color: black;
+  justify-content: center;
+  width: 35rem;
+  height: 45rem;
+  color: white;
+  backface-visibility: hidden;
+}
+.front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.display-img
+{  position: absolute;
   width: 100%;
   height: 35rem;
-  overflow: hidden;
   object-fit: cover;
+  margin-bottom: 10rem;
 }
+
+.back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45rem;
+}
+.card-container:hover .card {
+  transform: rotateY(180deg);
+}
+.back {
+  transform: rotateY(180deg);
+}
+
+.card-title{
+  margin-top: 35rem;
+  font-family: var(--font-family);
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.description{
+  font-family: var(--font-family);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
 
