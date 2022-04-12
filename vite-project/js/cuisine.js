@@ -47,10 +47,13 @@ const food = [
   {
     img: "../images/1033.jpg",
     name: "Fried Lobster",
+    description:
+      "Families usually order fried lobster during the Lunar New Year or for special occasions. The dish consists of fried lobster, along with scallions.",
   },
   {
     img: "../images/999.jpg",
     name: "Fried Dumplings",
+    description: "Pan",
   },
   {
     img: "../images/9910.jpg",
@@ -104,7 +107,7 @@ food.forEach((food) => {
   <img class = "display-img" src="${food.img}" alt="">
           <h1 class="card-title">${food.name}</h1>
         </div>
-        <div class="back"><h1 class="description">sjadksfhaebjbf Back jdafksygdj descriptions jskashdashf</h1></div>
+        <div class="back"><h1 class="description">${food.description}</h1></div>
     </div>
   </div> `
   );
