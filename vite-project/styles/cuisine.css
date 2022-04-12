@@ -86,7 +86,7 @@ header {
   border-left-style: none;
 }
 
-.display {
+.display{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -95,43 +95,71 @@ header {
   margin-bottom: 20rem;
   flex-wrap: wrap;
 }
+.card-container {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  perspective: 90rem;
+}
+.card {
+position: relative;
+width: 35rem;
+height: 35rem;
+margin-left: 5rem;
+margin-right: 5rem;
+margin-bottom: 20rem;
+transition: all 1.5s ease;
+transform-style: preserve-3d;
+}
 
-.display-card {
-  margin-left: 5rem;
-  width: 40rem;
-  margin-right: 5rem;
-  margin-bottom: 6rem;
-  padding-bottom: 6rem;
+.front, .back {
+  position: absolute;
   background-color: black;
   justify-content: center;
-
-  transform: preserve-3d;
-  transition: all 0.5s ease;
-}
-.display-name {
-  font-size: 2.5rem;
+  width: 35rem;
+  height: 45rem;
   color: white;
-  text-align: center;
-  font-family: var(--font-family);
-  margin-top: 2.5rem;
+  backface-visibility: hidden;
+}
+.front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 
-.display-card img {
+.display-img
+{  position: absolute;
   width: 100%;
   height: 35rem;
-  overflow: hidden;
   object-fit: cover;
+  margin-bottom: 10rem;
 }
 
-.front-card {
-  backface-visibility: hidden;
+.back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45rem;
 }
-
-.back-card {
-  backface-visibility: hidden;
+.card-container:hover .card {
+  transform: rotateY(180deg);
+}
+.back {
   transform: rotateY(180deg);
 }
 
-.display-card:hover {
-  transform: rotateY(180deg);
+.card-title{
+  margin-top: 35rem;
+  font-family: var(--font-family);
+  font-size: 2.5rem;
+  text-align: center;
 }
+
+.description{
+  font-family: var(--font-family);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+
