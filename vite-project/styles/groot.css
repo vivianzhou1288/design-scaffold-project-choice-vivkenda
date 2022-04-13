@@ -55,3 +55,7 @@
   left: 72rem;
 }
 
+.links:hover {
+  color: #f25e5e;
+  font-weight: bold;
+}

@@ -108,7 +108,7 @@ header {
   margin-left: 7rem;
   margin-right: 7rem;
   margin-bottom: 20rem;
-  transition: all 1.5s ease;
+  transition: all 1s ease;
   transform-style: preserve-3d;
 }
 
@@ -165,4 +165,9 @@ header {
   font-size: 1.5rem;
   text-align: center;
   width: 20rem;
+}
+
+.links:hover {
+  color: #f25e5e;
+  font-weight: bold;
 }
