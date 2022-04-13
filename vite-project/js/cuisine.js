@@ -53,7 +53,8 @@ const food = [
   {
     img: "../images/999.jpg",
     name: "Fried Dumplings",
-    description: "Pan",
+    description:
+      "Fried dumplings is a favorite in China. They are usually pan-fried and consist of pork, cabbage, shiitake mushrooms, and garlic chives.",
   },
   {
     img: "../images/9910.jpg",
