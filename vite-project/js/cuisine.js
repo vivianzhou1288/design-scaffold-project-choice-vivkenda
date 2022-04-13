@@ -59,38 +59,55 @@ const food = [
   {
     img: "../images/9910.jpg",
     name: "Chinese Sauerkraut Boiled Fish",
+    description:
+      "Chinese Sauerkraut Boiled Fish, also known as Szechuan Fish or Suan Cai Yu, is a szechuan style fish stew with pickled mustard greens.",
   },
   {
     img: "../images/9911.jpg",
     name: "Fried Rice",
+    description:
+      "Fried Rice is a common dish in China. It consists of white grain rice, that is usually leftover rice from the day before. You can add whatever you like into the dish. Usually, ingredients consists of eggs, green onions, vegetables, meat, soy sauce, and oil.",
   },
   {
     img: "../images/9912.jpg",
     name: "Noodles with Beef and Cucumber",
+    description: "This dish consists of noodles with beef and cucumber.",
   },
   {
     img: "../images/9913.jpg",
     name: "Buddha Jumps Over the Wall",
+    description:
+      "This dish has an unique name of Budda Jumps Over the Wall. During the Qing Dynasty, a scholar who travelledby foot carried preserved food in a clay jar. When he began cooking the dish, the scent attracted a meditating monk. The monk proceeded to jump over the wall to eat the dish. The dish is a herbal soup full of nutritious Chinese ingredients that consists of abalone, chicken feet, dried scallops, dried medicinal herbs, and deer sinews.",
   },
   {
     img: "../images/9914.jpg",
     name: "Drunken Noodles",
+    description:
+      "Drunken Noodles is a stir fry noodle dish that is also known as Thai food. The dish consists of rice noodles, chicken (or other proteins), produce like shallots, carrots, and garlic, as well as sauces like oyster sauce, soy sauce, and fish sauce.",
   },
   {
     img: "../images/4554.jpg",
     name: "Hot and Sour Soup",
+    description:
+      "Hot and Sour Soup is a popular Sichuan cuisine. There are many variations of the soup in the Hunan province, as well as Beijing. Ingredients consist of dried shiitake mushrooms, dried lily flowers, pork, tofu, and wood ears.",
   },
   {
     img: "../images/1034.jpg",
     name: "Honey Walnut Shrimp",
+    description:
+      "Honey Walnut Shrimp is a Hong-Kong style recipe. THe dish consists of crispy battered shrimp tossed in a creamy sauce and topped with sugar-coated walnuts.",
   },
   {
     img: "../images/9916.jpg",
     name: "Roast Pork",
+    description:
+      "Roast Pork, or Siu Yuk, can be found in an average Chinese restaurant. For this dish, you will need a slab of pork belly that still had the ribs attached. An oven is needed to cook this dish.",
   },
   {
     img: "../images/9922.jpg",
     name: "Egg Tofu",
+    description:
+      "Egg Tofu is a special tofu made from water, eggs, and soy milk. You can pan fry, boil, and braise egg tofu. Egg tofu can also be eaten raw.",
   },
 ];
 const DOMSelectors = {
