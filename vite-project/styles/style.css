@@ -239,3 +239,22 @@ path:hover {
   fill: #f25e5e;
   cursor: pointer;
 }
+.highlights {
+  height: 80rem;
+  background-color: rgb(230, 230, 230);
+  font-family: var(--font-family);
+}
+.highlights h5 {
+  font-size: 4.5rem;
+  margin-bottom: 2.5rem;
+}
+.highlights h6 {
+  font-size: 2.5rem;
+  width: 55rem;
+}
+.HL-text {
+  padding: 10rem;
+}
+.line {
+  background-color: black;
+}
