@@ -138,8 +138,134 @@
 }
 
 .collage {
-  height: 200rem;
-  background-color: black;
+  display: grid;
+  grid-template-columns: [first] 53rem [line2] 20.5rem [line2-5] 2rem [third] 25rem[col4-start] 5rem [col4-end] 26rem [end];
+  grid-template-rows: [row1-start] 23rem [row1-end] 12rem [line1-5] 7rem [second] 10rem [second-end] 19.313rem [third] 9.5rem [fourth] 21rem [fifth] 23.688rem [end];
+  column-gap: 1.438rem;
+  row-gap: 1.438rem
+}
+.longi{
+  grid-column-start: line2;
+  grid-column-end: third;
+  grid-row-start: row1-start;
+  grid-row-end: row1-end;
+  width: 23.813rem;
+  height: 22.813rem;
+  object-fit: cover;
+}
+.crane{
+  grid-column-start: third;
+  grid-column-end: col4-start;
+  grid-row-start: row1-start;
+  grid-row-end: line1-5;
+  width: 25rem;
+  height: 36.063rem;
+  object-fit: cover;
+}
+.gardens{
+  grid-column-start: col4-start;
+  grid-row-start: row1-start;
+  grid-row-end: row1-end;
+  width: 29.063rem;
+  height: 22.813rem;
+  object-fit: cover;
+}
+.studio{
+  grid-column-start: line2;
+  grid-column-end: third;
+  grid-row-start: row1-end;
+  grid-row-end: second;
+  width: 23.813rem;
+  height: 20rem;
+  object-fit: cover;
+}
+.guangxi{
+  grid-column-start: third;
+  grid-column-end: col4-start;
+  grid-row-start: line1-5;
+  grid-row-end: second-end;
+  width: 25rem;
+  height: 19.25rem;
+  object-fit: cover;
+}
+.heaven{
+  grid-column-start: col4-start;
+  grid-row-start: row1-end;
+  grid-row-end: second-end;
+  width: 29.063rem;
+  height: 32.7rem;
+  object-fit: cover;
+}
+.wall{
+  grid-column-start: line2;
+  grid-column-end: third;
+  grid-row-start: second;
+  grid-row-end: third;
+  width: 23.813rem;
+  height: 30.313rem;
+  object-fit: cover;
+}
+.park{
+  grid-column-start: col4-end;
+  grid-column-end: end;
+  grid-row-start: second-end;
+  grid-row-end: third;
+  width: 22.65rem;
+  height: 19.5rem;
+  object-fit: cover;
+}
+.tower{
+  grid-column-start: line2;
+  grid-column-end: third;
+  grid-row-start: third;
+  grid-row-end: fifth;
+  width: 23.813rem;
+  height: 31.313rem;
+  object-fit: cover;
+}
+.yangshuo{
+  grid-column-start: third;
+  grid-column-end: col4-end;
+  grid-row-start: fourth;
+  grid-row-end: fifth;
+  width: 31.3rem;
+  height: 20.3rem;
+  object-fit: cover;
+}
+.walkway{
+  grid-column-start: col4-end;
+  grid-column-end: end;
+  grid-row-start: third;
+  grid-row-end: fifth;
+  width: 22.5rem;
+  height: 31.313rem;
+  object-fit: cover;
+}
+.bell{
+  grid-column-start: line2;
+  grid-column-end: line2-5;
+  grid-row-start: fifth;
+  grid-row-end: end;
+  width: 20.5rem;
+  height: 23.688rem;
+  object-fit: cover;
+}
+.panda{
+  grid-column-start: line2-5;
+  grid-column-end: col4-start;
+  grid-row-start: fifth;
+  width: 28rem;
+  height: 23.688rem;
+  object-fit: cover;
+}
+.jiuzhaigou{
+  grid-column-start: col4-start;
+  grid-column-end: end;
+  grid-row-start: fifth;
+  grid-row-end: end;
+  width: 29rem;
+  height: 23.688rem;
+  object-fit: cover;
 }
 
 .left-arrow,
@@ -165,3 +291,15 @@
   color: #f25e5e;
   font-weight: bold;
 }
+.footer{
+  width: 100%;
+  text-align:center;
+  padding: 1.875rem 0;
+ }
+ .icons .fa{
+  color: black;
+  margin: 0 0.813rem;
+  cursor: pointer;
+  padding: 1.125rem 0;
+  font-size: 3rem;
+ }

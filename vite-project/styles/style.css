@@ -267,3 +267,15 @@ path:hover {
 .line {
   background-color: black;
 }
+.footer{
+  width: 100%;
+  text-align:center;
+  padding: 1.875rem 0;
+ }
+ .icons .fa{
+  color: black;
+  margin: 0 0.813rem;
+  cursor: pointer;
+  padding: 1.125rem 0;
+  font-size: 3rem;
+ }
