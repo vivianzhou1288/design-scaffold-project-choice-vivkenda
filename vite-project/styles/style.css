@@ -240,7 +240,7 @@ path:hover {
   cursor: pointer;
 }
 .highlights {
-  height: 80rem;
+  height: 78rem;
   background-color: rgb(230, 230, 230);
   font-family: var(--font-family);
 }
@@ -256,10 +256,10 @@ path:hover {
   padding: 10rem;
 }
 .HL-pic {
-  width: 32rem;
-  height: 45rem;
+  width: 33rem;
+  height: 42rem;
   object-fit: cover;
-  margin: -29rem 6rem 0rem 0rem;
+  margin: -33rem 6rem 0rem 0rem;
 }
 .HL-img {
   display: flex;
@@ -268,4 +268,21 @@ path:hover {
 a:visited {
   text-decoration: none;
   color: white;
+}
+.HL-name {
+  background-color: white;
+  font-size: 2.5rem;
+  width: 33rem;
+  height: 9rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+.view-more {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5.5rem;
 }
