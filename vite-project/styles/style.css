@@ -243,6 +243,7 @@ path:hover {
   height: 78rem;
   background-color: rgb(230, 230, 230);
   font-family: var(--font-family);
+  position: relative;
 }
 .highlights h5 {
   font-size: 4.5rem;
@@ -256,10 +257,11 @@ path:hover {
   padding: 10rem;
 }
 .HL-pic {
+  position: absolute;
   width: 33rem;
   height: 42rem;
   object-fit: cover;
-  margin: -33rem 6rem 0rem 0rem;
+  margin: -68rem 6rem 0rem 0rem;
 }
 .HL-img {
   display: flex;
@@ -268,6 +270,10 @@ path:hover {
 a:visited {
   text-decoration: none;
   color: white;
+}
+.view-more a:visited {
+  text-decoration: none;
+  color: black;
 }
 .HL-name {
   background-color: white;
@@ -279,10 +285,19 @@ a:visited {
   justify-content: center;
   align-items: center;
   font-weight: 600;
+  margin-top: -26rem;
+  margin-right: 7rem;
 }
 .view-more {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   font-weight: bold;
   text-align: center;
-  margin-top: 5.5rem;
+  margin-top: rem;
+  color: black;
+  width: 33rem;
+  margin-top: 4.5rem;
+}
+.icon {
+  width: 25rem;
+  margin: 10rem 0rem 0rem 8rem;
 }
