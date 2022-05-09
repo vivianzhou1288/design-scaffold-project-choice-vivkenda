@@ -226,10 +226,10 @@ header {
   grid-row-end: last-line;
   color: white;
   font-family: var(--font-family);
-  width: 40rem;
   background-color: #42424299;
-  margin: 15rem auto;
-  padding: 0.5rem 0rem 0rem 0rem;
+  width: 40rem;
+  margin: 17rem auto 14rem 0rem;
+  padding: 0.5rem 0rem 0.7rem 0rem;
 }
 .links:hover {
   color: #f25e5e;
@@ -240,6 +240,7 @@ path:hover {
   cursor: pointer;
 }
 .highlights {
+  margin-top: -11rem;
   height: 78rem;
   background-color: rgb(230, 230, 230);
   font-family: var(--font-family);
