@@ -112,9 +112,10 @@
 }
 .data-slides {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .slide {
   position: absolute;
@@ -125,12 +126,13 @@
 }
 
 .slide > img {
-  width: 50%;
-  height: 50%;
+  width: 40%;
+  height: 90%;
   object-fit: cover;
   object-position: center;
   align-items: center;
   display: flex;
+  margin-left: 57rem;
 }
 
 .slide[data-active] {
@@ -155,7 +157,9 @@
   padding: 0 0.5rem;
   background-color: rgba(0, 0, 0, 0.1);
   color: black;
-  display: flex;
+  display: inline-block;
+  padding: 1rem;
+  position: absolute;
 }
 
 .carousel-button:hover,
@@ -249,7 +253,7 @@
   grid-column-end: col4-start;
   grid-row-start: row1-start;
   grid-row-end: line1-5;
-  width: 29.3rem;
+  width: 29.6rem;
   height: 44.063rem;
   object-fit: cover;
 }
@@ -275,7 +279,7 @@
   grid-column-end: col4-start;
   grid-row-start: line1-5;
   grid-row-end: second-end;
-  width: 29.3rem;
+  width: 29.6rem;
   height: 26.3rem;
   object-fit: cover;
 }
