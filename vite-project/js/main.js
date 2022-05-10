@@ -28,3 +28,5 @@ gsap.to(
   },
   "-=1.5"
 );
+
+const DOMSelectors = {};
