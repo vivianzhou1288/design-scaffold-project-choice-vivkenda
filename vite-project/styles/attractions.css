@@ -234,7 +234,7 @@
 
 .collage {
   display: grid;
-  grid-template-columns: [first] 45rem [line2] 25rem [line2-5] 2rem [third] 30rem[col4-start] 5rem [col4-end] 32rem [sixth] 45rem;
+  grid-template-columns: [first] 45rem [line2] 25rem [line2-5] 2rem [third] 30rem[col4-start] 5rem [col4-end] 32rem [sixth] 45rem [end];
   grid-template-rows: [row1-start] 28rem [row1-end] 15rem [line1-5] 9rem [second] 16rem [second-end] 23.313rem [third] 9.5rem [fourth] 25.3rem [fifth] 28.688rem [end];
   column-gap: 1.438rem;
   row-gap: 1.438rem;
