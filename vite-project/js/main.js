@@ -44,3 +44,7 @@ export default {
 
 const path = document.querySelectorAll("path");
 const map = document.querySelector(".mapOfChina");
+
+const DOMSelectors = {
+  province: document.getElementById,
+};
