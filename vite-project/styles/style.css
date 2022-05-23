@@ -327,5 +327,30 @@ a:visited {
   margin: 10rem 0rem 0rem 8rem;
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 414px) {
+  .navbar {
+  }
+  header {
+    width: 100%;
+    height: 70rem;
+  }
+  .text-box h1 {
+    font-size: 8rem;
+  }
+  .text-box h2 {
+    font-size: 3rem;
+  }
+  img.img3 {
+    display: none;
+  }
+  .top-imgs {
+    margin-top: 54rem;
+  }
+  .mapOfChina {
+    display: none;
+  }
+  .more-info {
+    display: flex;
+    flex-direction: column;
+  }
 }
