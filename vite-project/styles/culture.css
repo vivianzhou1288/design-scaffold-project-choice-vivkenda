@@ -1,5 +1,8 @@
 @import url("variable.css");
 
+body{
+  font-family: var(--font-family);
+}
 .navbar {
   position: absolute;
   width: 100%;
@@ -10,7 +13,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 1% 6%;
-
   background: var(--grey);
 }
 .navbar img {
@@ -54,12 +56,78 @@
 .groot {
   left: 72rem;
 }
-body {
-  background: url("https://images.unsplash.com/photo-1600160366979-6ba227486e30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .links:hover {
   color: #f25e5e;
   font-weight: bold;
+}
+
+header{
+  width:100%;
+  height:90rem;
+  background: linear-gradient(rgba(36, 35, 35, 0.4), rgba(36, 35, 35, 0.4)),
+  url("http://4.bp.blogspot.com/-LSQmZ0o9Wys/Vktv5G1EbcI/AAAAAAAABbQ/QRw9QJSi3xQ/s1600/red-lanterns.jpg")top/cover no-repeat ;
+margin-bottom: 10rem;
+}
+
+.title{
+  font-size: 10rem;
+  color: white;
+  font-family: var(--font-family);
+  text-align: center;
+  margin-top: 40rem;
+  text-shadow: 1rem 1rem 1rem rgb(22, 22, 22);
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.holidays1, .holidays2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6rem;
+}
+
+h1{
+  font-size: 4rem;
+}
+h3{
+  font-size: 2.5rem;
+  margin-left: 4rem;
+  margin-top: 1rem;
+}
+p{
+  font-size:2.5rem;
+  margin-left: 4rem;
+  margin-top: 1rem;
+}
+img {
+  width: 55rem;
+  height: 100%;
+  object-fit: cover;
+}
+.flexbox{
+  height:40rem;
+  margin: 2rem;
+}
+
+
+
+.holidays1 > *:nth-child(1){
+  flex: 1 1 20%;
+ ;
+}
+
+.holidays1 > *:nth-child(2){
+  flex: 1 1 80%;
+}
+
+.holidays2 > *:nth-child(1){
+  flex: 1 1 60%;
+ ;
+}
+
+.holidays2 > *:nth-child(2){
+  flex: 1 1 30%;
 }
