@@ -59,3 +59,35 @@
   color: #f25e5e;
   font-weight: bold;
 }
+
+.mySlides{
+  width:100%;
+  height:60rem;
+  margin-top:7rem;
+  object-fit: cover;
+  position:absolute;
+}
+
+.Btn{
+  color: white;
+  font-size: 10rem;
+  border:none;
+  outline:none;
+  background-color: transparent;
+  z-index: 1;
+}
+
+.right{
+position:absolute;
+right:2rem;
+top:30rem;
+text-align:right;
+}
+
+.left{
+  position:absolute;
+  left:2rem;
+  top:30rem;
+  text-align:right;
+  }
+
