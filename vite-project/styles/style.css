@@ -7,6 +7,7 @@
   left: 0rem;
   top: 0rem;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 1% 6%;
@@ -325,4 +326,10 @@ a:visited {
 .icon {
   width: 25rem;
   margin: 10rem 0rem 0rem 8rem;
+}
+@media all and (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    position: relative;
+  }
 }
