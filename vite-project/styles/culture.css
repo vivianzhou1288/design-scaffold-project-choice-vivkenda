@@ -68,7 +68,7 @@ header{
   url("http://4.bp.blogspot.com/-LSQmZ0o9Wys/Vktv5G1EbcI/AAAAAAAABbQ/QRw9QJSi3xQ/s1600/red-lanterns.jpg")top/cover no-repeat ;
 margin-bottom: 10rem;
 }
-
+/* Header img and title*/
 .title{
   font-size: 10rem;
   color: white;
@@ -82,52 +82,128 @@ margin-bottom: 10rem;
   transform: translate(-50%, -50%);
 }
 
+/*Intro 3 flexbox*/
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.content{
+width: 17vw;
+flex-wrap: wrap;
+margin: 2rem;
+height: 40vh;
+justify-content: center;
+
+}
+
+.content p {
+  font-size: 2rem;
+}
+.content h1 {
+  font-size: 3rem;
+}
+.content img{
+width: 100%;
+height: 70%;
+object-fit: cover;
+margin-top: 2rem;
+}
+
+/*About Section*/
+
+.about{
+  background-color: #DCDCDC;
+display: flex;
+padding: 6rem;
+height:90vh;
+justify-content: center;
+align-items: center;
+margin-bottom: 10rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: -3rem;
+}
+.grid-text{
+  margin-right: 6rem;
+  transform: translate(0, -17rem);
+  width: 80rem;
+
+}
+.square-grid {
+  text-align: center;
+}
+
+.card{
+  margin:2rem;
+}
+
+.square-grid img{
+  width:20vw;
+  height: 35vh;
+  object-fit: cover;
+}
+
+
+.grid-title{
+  justify-content: center;
+  transform: translate(0, -17rem);
+  font-size: 3rem;
+  color: white;
+}
+/*Holidays Section*/
 .holidays1, .holidays2 {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 6rem;
+  justify-content: space-between;
+  width: 65%;
+  margin: auto;
 }
 
 h1{
-  font-size: 4rem;
+  font-size: 3rem;
 }
 h3{
   font-size: 2.5rem;
-  margin-left: 4rem;
   margin-top: 1rem;
 }
 p{
-  font-size:2.5rem;
-  margin-left: 4rem;
+  font-size:2rem;
   margin-top: 1rem;
 }
 img {
-  width: 55rem;
+  width: 40rem;
   height: 100%;
   object-fit: cover;
 }
 .flexbox{
-  height:40rem;
+  height:35vh;
   margin: 2rem;
+  margin-bottom: 7rem;
 }
 
 
-
 .holidays1 > *:nth-child(1){
-  flex: 1 1 20%;
+  flex: 1 1 15%;
  ;
 }
 
 .holidays1 > *:nth-child(2){
-  flex: 1 1 80%;
+  flex: 1 1 85%;
 }
 
 .holidays2 > *:nth-child(1){
-  flex: 1 1 60%;
+  flex: 1 1 85%;
  ;
 }
 
 .holidays2 > *:nth-child(2){
-  flex: 1 1 30%;
+  flex: 1 1 15%;
 }
+
