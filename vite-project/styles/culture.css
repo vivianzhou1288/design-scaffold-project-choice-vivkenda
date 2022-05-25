@@ -1,6 +1,6 @@
 @import url("variable.css");
 
-body{
+body {
   font-family: var(--font-family);
 }
 .navbar {
@@ -61,15 +61,16 @@ body{
   font-weight: bold;
 }
 
-header{
-  width:100%;
-  height:90rem;
+header {
+  width: 100%;
+  height: 90rem;
   background: linear-gradient(rgba(36, 35, 35, 0.4), rgba(36, 35, 35, 0.4)),
-  url("http://4.bp.blogspot.com/-LSQmZ0o9Wys/Vktv5G1EbcI/AAAAAAAABbQ/QRw9QJSi3xQ/s1600/red-lanterns.jpg")top/cover no-repeat ;
-margin-bottom: 10rem;
+    url("http://4.bp.blogspot.com/-LSQmZ0o9Wys/Vktv5G1EbcI/AAAAAAAABbQ/QRw9QJSi3xQ/s1600/red-lanterns.jpg")
+      top/cover no-repeat;
+  margin-bottom: 10rem;
 }
 /* Header img and title*/
-.title{
+.title {
   font-size: 10rem;
   color: white;
   font-family: var(--font-family);
@@ -83,7 +84,7 @@ margin-bottom: 10rem;
 }
 
 /*Intro 3 flexbox*/
-.container{
+.container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -91,13 +92,12 @@ margin-bottom: 10rem;
   margin-bottom: 4rem;
 }
 
-.content{
-width: 17vw;
-flex-wrap: wrap;
-margin: 2rem;
-height: 40vh;
-justify-content: center;
-
+.content {
+  width: 17vw;
+  flex-wrap: wrap;
+  margin: 2rem;
+  height: 40vh;
+  justify-content: center;
 }
 
 .content p {
@@ -106,23 +106,23 @@ justify-content: center;
 .content h1 {
   font-size: 3rem;
 }
-.content img{
-width: 100%;
-height: 70%;
-object-fit: cover;
-margin-top: 2rem;
+.content img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  margin-top: 2rem;
 }
 
 /*About Section*/
 
-.about{
-  background-color: #DCDCDC;
-display: flex;
-padding: 6rem;
-height:90vh;
-justify-content: center;
-align-items: center;
-margin-bottom: 10rem;
+.about {
+  background-color: #dcdcdc;
+  display: flex;
+  padding: 6rem;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10rem;
 }
 
 .row {
@@ -130,35 +130,35 @@ margin-bottom: 10rem;
   align-items: center;
   margin-bottom: -3rem;
 }
-.grid-text{
+.grid-text {
   margin-right: 6rem;
   transform: translate(0, -17rem);
   width: 80rem;
-
 }
 .square-grid {
   text-align: center;
 }
 
-.card{
-  margin:2rem;
+.card {
+  margin: 2rem;
 }
 
-.square-grid img{
-  width:20vw;
+.square-grid img {
+  width: 20vw;
   height: 35vh;
   object-fit: cover;
 }
 
-
-.grid-title{
+.grid-title {
   justify-content: center;
-  transform: translate(0, -17rem);
+  transform: translate(0, -19rem);
   font-size: 3rem;
   color: white;
+  text-shadow: 1rem 1rem 1rem rgb(0, 0, 0);
 }
 /*Holidays Section*/
-.holidays1, .holidays2 {
+.holidays1,
+.holidays2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -166,15 +166,15 @@ margin-bottom: 10rem;
   margin: auto;
 }
 
-h1{
+h1 {
   font-size: 3rem;
 }
-h3{
+h3 {
   font-size: 2.5rem;
   margin-top: 1rem;
 }
-p{
-  font-size:2rem;
+p {
+  font-size: 2rem;
   margin-top: 1rem;
 }
 img {
@@ -182,28 +182,24 @@ img {
   height: 100%;
   object-fit: cover;
 }
-.flexbox{
-  height:35vh;
+.flexbox {
+  height: 35vh;
   margin: 2rem;
   margin-bottom: 7rem;
 }
 
-
-.holidays1 > *:nth-child(1){
-  flex: 1 1 15%;
- ;
-}
-
-.holidays1 > *:nth-child(2){
-  flex: 1 1 85%;
-}
-
-.holidays2 > *:nth-child(1){
-  flex: 1 1 85%;
- ;
-}
-
-.holidays2 > *:nth-child(2){
+.holidays1 > *:nth-child(1) {
   flex: 1 1 15%;
 }
 
+.holidays1 > *:nth-child(2) {
+  flex: 1 1 85%;
+}
+
+.holidays2 > *:nth-child(1) {
+  flex: 1 1 85%;
+}
+
+.holidays2 > *:nth-child(2) {
+  flex: 1 1 15%;
+}
