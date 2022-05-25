@@ -121,6 +121,7 @@
   object-position: center;
   align-items: center;
   margin-top: -23rem;
+  transform: translate(-1%);
 }
 
 .slide[data-active] {
@@ -233,7 +234,7 @@
 
 .collage {
   display: grid;
-  grid-template-columns: [first] 45rem [line2] 25rem [line2-5] 2rem [third] 30rem[col4-start] 5rem [col4-end] 32rem [sixth] 45rem;
+  grid-template-columns: [first] 45rem [line2] 25rem [line2-5] 2rem [third] 30rem[col4-start] 5rem [col4-end] 32rem [sixth] 45rem [end];
   grid-template-rows: [row1-start] 28rem [row1-end] 15rem [line1-5] 9rem [second] 16rem [second-end] 23.313rem [third] 9.5rem [fourth] 25.3rem [fifth] 28.688rem [end];
   column-gap: 1.438rem;
   row-gap: 1.438rem;
@@ -411,4 +412,81 @@
   cursor: pointer;
   padding: 1.125rem 0;
   font-size: 3rem;
+}
+@media only screen and (max-width: 1600px) {
+  .collage {
+    display: grid;
+    grid-template-columns: [first] 30rem [line2] 25rem [line2-5] 2rem [third] 30rem[col4-start] 5rem [col4-end] 32rem [sixth] 45rem [end];
+    grid-template-rows: [row1-start] 28rem [row1-end] 15rem [line1-5] 9rem [second] 16rem [second-end] 23.313rem [third] 9.5rem [fourth] 25.3rem [fifth] 28.688rem [end];
+    column-gap: 1.438rem;
+    row-gap: 1.438rem;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .collage {
+    display: grid;
+    grid-template-columns: [first] 15rem [line2] 25rem [line2-5] 2rem [third] 30rem[col4-start] 5rem [col4-end] 32rem [sixth] 45rem [end];
+    grid-template-rows: [row1-start] 28rem [row1-end] 15rem [line1-5] 9rem [second] 16rem [second-end] 23.313rem [third] 9.5rem [fourth] 25.3rem [fifth] 28.688rem [end];
+    column-gap: 1.438rem;
+    row-gap: 1.438rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .collage {
+    display: grid;
+    grid-template-columns: [first] 3rem [line2] 25rem [line2-5] 2rem [third] 30rem[col4-start] 5rem [col4-end] 32rem [sixth] 45rem [end];
+    grid-template-rows: [row1-start] 28rem [row1-end] 15rem [line1-5] 9rem [second] 16rem [second-end] 23.313rem [third] 9.5rem [fourth] 25.3rem [fifth] 28.688rem [end];
+    column-gap: 1.438rem;
+    row-gap: 1.438rem;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  img.crane {
+    display: none;
+  }
+  img.gardens {
+    display: none;
+  }
+  img.aquatics {
+    display: none;
+  }
+  img.heaven {
+    display: none;
+  }
+  img.city {
+    display: none;
+  }
+  img.park {
+    display: none;
+  }
+  img.yangshuo {
+    display: none;
+  }
+  img.walkway {
+    display: none;
+  }
+  img.panda {
+    display: none;
+  }
+  img.jiuzhaigou {
+    display: none;
+  }
+  .bell {
+    grid-column-start: line2;
+    grid-column-end: line2-5;
+    grid-row-start: fifth;
+    grid-row-end: end;
+    width: 27.813rem;
+    height: 28.688rem;
+    object-fit: cover;
+  }
+  .img-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15rem;
+    position: relative;
+  }
 }

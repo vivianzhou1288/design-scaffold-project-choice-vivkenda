@@ -28,5 +28,23 @@ gsap.to(
   },
   "-=1.5"
 );
+export default {
+  data() {
+    return {
+      title: "",
+      id: "",
+    };
+  },
+  methods: {
+    getInfo(e) {
+      this.title = e.target.id;
+    },
+  },
+};
 
-const DOMSelectors = {};
+const path = document.querySelectorAll("path");
+const map = document.querySelector(".mapOfChina");
+
+const DOMSelectors = {
+  province: document.getElementById,
+};
