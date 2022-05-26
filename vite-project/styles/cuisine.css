@@ -61,7 +61,7 @@ header {
   top: 7rem;
 }
 header {
-  background: url("../img/cup.jpg") ;
+  background: url("../public/cup.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   max-height: 75%;
