@@ -203,3 +203,44 @@ img {
 .holidays2 > *:nth-child(2) {
   flex: 1 1 15%;
 }
+
+/*Tradition Collage*/
+.tradition-collage{
+  height: 200vh;
+  width: 100%;
+  background-color: lightgrey;
+}
+
+/*History Timeline*/
+
+/*Media Queries*/
+
+@media only screen and (max-width: 768px) {
+  .container, .about  {
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    width: 70vw;
+    flex-wrap: wrap;
+    height: 40vh;
+    justify-content: center;
+    margin-bottom: -14rem;
+  }
+  .content1{
+    margin-bottom: 0vh;
+    margin-top: -5vh;
+  }
+  .about{
+    height:120vh;
+    margin-top: 8rem;
+  }
+  .grid-text{
+    transform: translate(0, -2rem);
+    width: 70vw;
+  }
+  .square-grid img {
+    width: 30vw;
+  }
+
+}
