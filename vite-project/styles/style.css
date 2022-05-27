@@ -129,6 +129,18 @@ header {
   left: 68rem;
 }
 
+.gansu-1 {
+  border-style: double;
+  position: absolute;
+  font-size: 3rem;
+  left: 146rem;
+  top: 205rem;
+  font-family: var(--font-family);
+  padding: 2rem;
+  opacity: 1;
+}
+
+
 .facts {
   display: flex;
   align-items: center;
@@ -248,6 +260,8 @@ path:hover {
   fill: #f25e5e;
   cursor: pointer;
 }
+
+
 .highlights {
   margin-top: -11rem;
   height: 78rem;
