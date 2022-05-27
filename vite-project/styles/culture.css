@@ -89,7 +89,8 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 4rem;
+  height: 35vh;
+  margin-bottom: 10rem;
 }
 
 .content {
@@ -107,21 +108,24 @@ header {
   font-size: 3rem;
 }
 .content img {
-  width: 100%;
+  width: 85%;
   height: 70%;
   object-fit: cover;
   margin-top: 2rem;
 }
-
+.content2 h1{
+  margin-bottom: 1rem;
+}
 /*About Section*/
 
 .about {
   background-color: #dcdcdc;
   display: flex;
   padding: 6rem;
-  height: 90vh;
+  width: 100vw;
+  height: 100vh;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 10rem;
 }
 
@@ -132,9 +136,18 @@ header {
 }
 .grid-text {
   margin-right: 6rem;
-  transform: translate(0, -17rem);
+  transform: translate(0, 2rem);
   width: 80rem;
+  justify-content: center;
+  align-items: center;
 }
+.grid-text h1{
+font-size: 4rem;
+}
+.grid-text p{
+  font-size: 2rem;
+  }
+
 .square-grid {
   text-align: center;
 }
@@ -147,14 +160,16 @@ header {
   width: 20vw;
   height: 35vh;
   object-fit: cover;
+  align-items: center;
 }
 
 .grid-title {
   justify-content: center;
-  transform: translate(0, -19rem);
+  transform: translate(0, -300%);
   font-size: 3rem;
   color: white;
   text-shadow: 1rem 1rem 1rem rgb(0, 0, 0);
+  
 }
 /*Holidays Section*/
 .holidays1,
@@ -166,24 +181,24 @@ header {
   margin: auto;
 }
 
-h1 {
-  font-size: 3rem;
-}
-h3 {
+.holiday-title {
   font-size: 2.5rem;
+}
+.holiday-date {
+  font-size: 1.75rem;
   margin-top: 1rem;
 }
-p {
-  font-size: 2rem;
+.holiday-description {
+  font-size: 1.75rem;
   margin-top: 1rem;
 }
-img {
+.img {
   width: 40rem;
   height: 100%;
   object-fit: cover;
 }
 .flexbox {
-  height: 35vh;
+  height: 30vh;
   margin: 2rem;
   margin-bottom: 7rem;
 }
@@ -209,38 +224,108 @@ img {
   height: 200vh;
   width: 100%;
   background-color: lightgrey;
+  margin-top: 10rem;
 }
 
 /*History Timeline*/
 
 /*Media Queries*/
 
-@media only screen and (max-width: 768px) {
-  .container, .about  {
-    display: flex;
-    flex-direction: column;
+@media only screen and (max-width: 1709px) {
+  .content p {
+    font-size: 1.8rem;
   }
-  .content {
-    width: 70vw;
-    flex-wrap: wrap;
-    height: 40vh;
-    justify-content: center;
-    margin-bottom: -14rem;
-  }
-  .content1{
-    margin-bottom: 0vh;
-    margin-top: -5vh;
+  .content h1 {
+    font-size: 2rem;
   }
   .about{
-    height:120vh;
+    margin-top: -5rem;
+  }
+.img{
+    margin-top: 5rem;
+}
+}
+
+
+@media only screen and (max-width: 1463px) {
+  .square-grid img {
+    width: 20vw;
+    height: 30vh;
+  }
+  .about{
+    height:90vh;
     margin-top: 8rem;
   }
+
+.content {
+  width: 25vw;
+}
+
+}
+@media only screen and (max-width: 1110px) {
+  .content p {
+    font-size: 1.6rem;
+  }
+  .content h1 {
+    font-size: 1.9rem;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  
   .grid-text{
     transform: translate(0, -2rem);
     width: 70vw;
   }
   .square-grid img {
-    width: 30vw;
+    width: 25vw;
+    height: 25vh;
   }
 
+  .holidays1{
+    flex-wrap: wrap;
+  }
+.holidays2 {
+  flex-wrap: wrap-reverse;
 }
+.holidays1, .holidays2{
+  margin-bottom: -20rem;
+}
+.flexbox {
+  height: 40vh;
+}
+.img {
+  margin-top: 10rem;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  .container, .about  {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+align-items: center;
+  }
+
+  .grid-text{
+    align-items: center;
+    justify-content: center;
+  }
+  .content img{
+    height: 25vh;
+  }
+  .content {
+    width: 50vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+  }
+
+  .holidays1, .holidays2{
+    margin-bottom: -8rem;
+  }
+  .img {
+    margin-top: 0rem;
+  }
+}
+
