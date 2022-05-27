@@ -113,7 +113,7 @@ header {
   object-fit: cover;
   margin-top: 2rem;
 }
-.content2 h1{
+.content2 h1 {
   margin-bottom: 1rem;
 }
 /*About Section*/
@@ -141,12 +141,14 @@ header {
   justify-content: center;
   align-items: center;
 }
-.grid-text h1{
-font-size: 4rem;
+.grid-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
-.grid-text p{
+.grid-text p {
   font-size: 2rem;
-  }
+  margin-bottom: 1rem;
+}
 
 .square-grid {
   text-align: center;
@@ -169,7 +171,6 @@ font-size: 4rem;
   font-size: 3rem;
   color: white;
   text-shadow: 1rem 1rem 1rem rgb(0, 0, 0);
-  
 }
 /*Holidays Section*/
 .holidays1,
@@ -220,7 +221,7 @@ font-size: 4rem;
 }
 
 /*Tradition Collage*/
-.tradition-collage{
+.tradition-collage {
   height: 200vh;
   width: 100%;
   background-color: lightgrey;
@@ -238,29 +239,27 @@ font-size: 4rem;
   .content h1 {
     font-size: 2rem;
   }
-  .about{
+  .about {
     margin-top: -5rem;
   }
-.img{
+  .img {
     margin-top: 5rem;
+  }
 }
-}
-
 
 @media only screen and (max-width: 1463px) {
   .square-grid img {
     width: 20vw;
     height: 30vh;
   }
-  .about{
-    height:90vh;
+  .about {
+    height: 90vh;
     margin-top: 8rem;
   }
 
-.content {
-  width: 25vw;
-}
-
+  .content {
+    width: 25vw;
+  }
 }
 @media only screen and (max-width: 1110px) {
   .content p {
@@ -272,8 +271,7 @@ font-size: 4rem;
 }
 
 @media only screen and (max-width: 970px) {
-  
-  .grid-text{
+  .grid-text {
     transform: translate(0, -2rem);
     width: 70vw;
   }
@@ -282,36 +280,38 @@ font-size: 4rem;
     height: 25vh;
   }
 
-  .holidays1{
+  .holidays1 {
     flex-wrap: wrap;
   }
-.holidays2 {
-  flex-wrap: wrap-reverse;
-}
-.holidays1, .holidays2{
-  margin-bottom: -20rem;
-}
-.flexbox {
-  height: 40vh;
-}
-.img {
-  margin-top: 10rem;
-}
+  .holidays2 {
+    flex-wrap: wrap-reverse;
+  }
+  .holidays1,
+  .holidays2 {
+    margin-bottom: -20rem;
+  }
+  .flexbox {
+    height: 40vh;
+  }
+  .img {
+    margin-top: 10rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-  .container, .about  {
+  .container,
+  .about {
     display: flex;
     flex-direction: column;
     height: fit-content;
-align-items: center;
+    align-items: center;
   }
 
-  .grid-text{
+  .grid-text {
     align-items: center;
     justify-content: center;
   }
-  .content img{
+  .content img {
     height: 25vh;
   }
   .content {
@@ -321,7 +321,8 @@ align-items: center;
     height: auto;
   }
 
-  .holidays1, .holidays2{
+  .holidays1,
+  .holidays2 {
     margin-bottom: -8rem;
   }
   .img {
@@ -329,3 +330,5 @@ align-items: center;
   }
 }
 
+@media only screen and (max-width: 650px) {
+}
