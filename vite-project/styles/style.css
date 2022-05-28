@@ -247,6 +247,7 @@ path {
 svg path {
   stroke: #eee;
   stroke-width: 0.25;
+  fill: grey;
 }
 
 svg path:hover {
