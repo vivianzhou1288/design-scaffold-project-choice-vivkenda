@@ -1,37 +1,24 @@
-import "../styles/groot.css";
+import "../styles/testing.css";
 import { gsap } from "gsap";
 
-var slideIndex = 1;
-showDivs(slideIndex);
+const navSlide = () => {
+  const menu = document.querySelector(".toggle-button");
+  const nav = document.querySelector(".nav-links");
+  const navLinks = document.querySelector(".nav-links li");
 
-const DOMSelectors = {
-  left: document.querySelector(".left"),
-  right: document.querySelector(".right"),
+  menu.addEventListener("click", () => {
+    nav.classList.toggle("nav-active");
+    console.log(Object.keys(navLinks));
+    Object.keys(navLinks).forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = "";
+      } else {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${
+          index / 7 + 0.3
+        }s`;
+      }
+    });
+    menu.classList.toggle("toggle");
+  });
 };
-
-DOMSelectors.left.addEventListener("click", function () {
-  plusDivs(-1);
-});
-
-DOMSelectors.right.addEventListener("click", function () {
-  plusDivs(1);
-});
-
-function plusDivs(n) {
-  showDivs((slideIndex += n));
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = x.length;
-  }
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slideIndex - 1].style.display = "block";
-}
+navSlide();

@@ -1,58 +1,67 @@
 @import url("variable.css");
-.navbar {
-  position: absolute;
-  width: 100%;
-  height: 7rem;
-  left: 0rem;
-  top: 0rem;
+
+.navbar{
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
-  padding: 1% 6%;
-
+  color: white;
+  z-index: 1;
+  font-size: 1.25rem;
   background: var(--grey);
 }
-.navbar img {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: 30px;
-  top: 15px;
-  border-radius: 100%;
+.nav-links{
+    display: flex;
+    margin-right: 3rem;
+    list-style: none;
 }
-.navbar a {
-  position: absolute;
-  width: 14.125rem;
-  height: 3.75rem;
-  top: 1.75rem;
-
+.logo{
+  display: flex;
+  flex-direction: row;
+  color: white;
+  letter-spacing: 5px;
+  font-size: 5rem;
+  padding-left: 5rem;
+  font-family: 'Ma Shan Zheng', cursive;
+}
+.logo h4{
+  padding-top: 0.7rem;
+}
+.logo img{
+  height: 5rem;
+  width: 5rem;
+  margin-right: 2rem;
+}
+ul li {
+    padding: 25px 25px;
+  } 
+.navbar a{
+  display: block;
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 400;
   font-size: 2rem;
   line-height: 2rem;
-  display: flex;
-  align-items: center;
-  text-align: center;
-
   color: #ffffff;
   text-decoration: none;
 }
-.home {
-  left: 11rem;
+.links:hover {
+  color: #f25e5e;
+  font-weight: bold;
 }
-.culture {
-  left: 23rem;
+.toggle-button {
+  display: none
 }
-.attractions {
-  left: 38rem;
+
+.toggle-button div{
+width: 2rem;
+height: 0.3rem;
+background-color: rgb(226,226,226);
+margin-bottom: 0.5rem;
+margin-right: 2rem;
+transition: all 0.3s ease;
 }
-.cuisine {
-  left: 58rem;
-}
-.groot {
-  left: 72rem;
-}
+
 header {
   position: absolute;
   width: 100%;
@@ -61,7 +70,7 @@ header {
   top: 7rem;
 }
 header {
-  background: url("../img/cup.jpg") ;
+  background: url("../public/cup.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   max-height: 75%;
@@ -170,4 +179,58 @@ header {
 .links:hover {
   color: #f25e5e;
   font-weight: bold;
+}
+@media all and (max-width: 768px) {
+  body{
+    overflow-x: hidden;
+    position: relative;
+  }
+  .navbar{
+    background: var(--grey);
+    height: 7rem;
+  }
+  .nav-links{
+    position: absolute;
+    right: -3rem;
+    height: 93.2vh;
+    top: 6.8vh;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .toggle-button{
+    display: block;
+  }
+  .nav-active{
+    transform: translateX(0%);
+  }
+  @keyframes navLinkFade{
+    from{
+      opacity: 0;
+      transform: translate(50px);
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+.toggle .line1{
+transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+opacity: 0;
+}
+.toggle .line3{
+transform: rotate(45deg) translate(-5px, -6px);
+}
+}
+@media screen and (max-width: 414px) {
+  .nav-links {
+    top: 7.8vh;
+  }
 }
