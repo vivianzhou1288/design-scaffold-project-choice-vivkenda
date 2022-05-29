@@ -253,9 +253,15 @@ path {
   -o-transition: all 150ms;
   transition: all 150ms;
 }
+svg path {
+  stroke: #eee;
+  stroke-width: 0.25;
+  fill: grey;
+}
 
-path:hover {
+svg path:hover {
   fill: #f25e5e;
+  transition: 0.6s;
   cursor: pointer;
 }
 .highlights {
