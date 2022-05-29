@@ -8,14 +8,6 @@ module.exports = defineConfig({
         main: resolve(__dirname, "index.html"),
         nested: resolve(__dirname, "culture.html"),
       },
-      input: {
-        main: resolve(__dirname, "index.html"),
-        nested: resolve(__dirname, "attractions.html"),
-      },
-      input: {
-        main: resolve(__dirname, "index.html"),
-        nested: resolve(__dirname, "cuisine.html"),
-      },
     },
   },
 });
