@@ -1,66 +1,60 @@
 @import url("variable.css");
 
-.navbar{
+.navbar {
+  position: absolute;
+  width: 100%;
+  height: 7rem;
+  left: 0rem;
+  top: 0rem;
   display: flex;
-  position: relative;
   justify-content: space-between;
   align-items: center;
-  color: white;
-  z-index: 1;
-  font-size: 1.25rem;
+  padding: 1% 6%;
+
   background: var(--grey);
 }
-.nav-links{
-    display: flex;
-    margin-right: 3rem;
-    list-style: none;
+.navbar img {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 30px;
+  top: 15px;
+  border-radius: 100%;
 }
-.logo{
-  display: flex;
-  flex-direction: row;
-  color: white;
-  letter-spacing: 5px;
-  font-size: 5rem;
-  padding-left: 5rem;
-  font-family: 'Ma Shan Zheng', cursive;
-}
-.logo h4{
-  padding-top: 0.7rem;
-}
-.logo img{
-  height: 5rem;
-  width: 5rem;
-  margin-right: 2rem;
-}
-ul li {
-    padding: 25px 25px;
-  } 
-.navbar a{
-  display: block;
+.navbar a {
+  position: absolute;
+  width: 14.125rem;
+  height: 3.75rem;
+  top: 1.75rem;
+
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 400;
   font-size: 2rem;
   line-height: 2rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
   color: #ffffff;
   text-decoration: none;
 }
-.links:hover {
-  color: #f25e5e;
-  font-weight: bold;
+.home {
+  left: 11rem;
 }
-.toggle-button {
-  display: none
+.culture {
+  left: 23rem;
+}
+.attractions {
+  left: 38rem;
+}
+.cuisine {
+  left: 58rem;
+}
+.groot {
+  left: 72rem;
 }
 
-.toggle-button div{
-width: 2rem;
-height: 0.3rem;
-background-color: rgb(226,226,226);
-margin-bottom: 0.5rem;
-margin-right: 2rem;
-transition: all 0.3s ease;
-}
 .img-group {
   display: flex;
   flex-direction: row;
@@ -91,7 +85,7 @@ transition: all 0.3s ease;
   object-fit: cover;
 } */
 .carousel {
-  margin-top: 23rem;
+  margin-top: 30rem;
   height: 40rem;
   position: relative;
   justify-content: center;
@@ -494,91 +488,5 @@ transition: all 0.3s ease;
     align-items: center;
     margin-bottom: 15rem;
     position: relative;
-  }
-  .box {
-    margin-bottom: 5rem;
-  }
-  .collage {
-    display: grid;
-    grid-template-columns: [first] 4.5rem [line2] 25rem [line2-5] 2rem [third] 30rem[col4-start] 5rem [col4-end] 32rem [sixth] 45rem [end];
-    grid-template-rows: [row1-start] 28rem [row1-end] 15rem [line1-5] 9rem [second] 16rem [second-end] 23.313rem [third] 9.5rem [fourth] 25.3rem [fifth] 28.688rem [end];
-    column-gap: 1.438rem;
-    row-gap: 1.438rem;
-  }
-  .slide > img {
-    width: 100%;
-  }
-}
-@media all and (max-width: 768px) {
-  body{
-    overflow-x: hidden;
-    position: relative;
-  }
-  .carousel {
-   left: -2rem;
-   width: 43rem;
-  }
-  .navbar{
-    background: var(--grey);
-    height: 7rem;
-  }
-  .nav-links{
-    position: absolute;
-    right: -3rem;
-    height: 93.2vh;
-    top: 6.8vh;
-    background-color: orange;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    width: 50%;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
-  }
-  .toggle-button{
-    display: block;
-  }
-  .nav-active{
-    transform: translateX(0%);
-  }
-  @keyframes navLinkFade{
-    from{
-      opacity: 0;
-      transform: translate(50px);
-    }
-    to{
-      opacity: 1;
-      transform: translateX(0px);
-    }
-  }
-
-.toggle .line1{
-transform: rotate(-45deg) translate(-5px, 6px);
-}
-.toggle .line2{
-opacity: 0;
-}
-.toggle .line3{
-transform: rotate(45deg) translate(-5px, -6px);
-}
-}
-@media screen and (max-width: 414px) {
-  .nav-links {
-    top: 7.8vh;
-  }
-}
-@media only screen and (max-width: 390px) {
-  .collage-title {
-    justify-content: center;
-    margin-left: 0.7rem;
-  }
-}
-@media only screen and (max-width: 375px) {
-  .collage {
-    display: grid;
-    grid-template-columns: [first] 3.5rem [line2] 25rem [line2-5] 2rem [third] 30rem[col4-start] 5rem [col4-end] 32rem [sixth] 45rem [end];
-    grid-template-rows: [row1-start] 28rem [row1-end] 15rem [line1-5] 9rem [second] 16rem [second-end] 23.313rem [third] 9.5rem [fourth] 25.3rem [fifth] 28.688rem [end];
-    column-gap: 1.438rem;
-    row-gap: 1.438rem;
   }
 }
