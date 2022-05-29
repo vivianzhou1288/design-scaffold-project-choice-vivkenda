@@ -91,7 +91,7 @@ transition: all 0.3s ease;
   object-fit: cover;
 } */
 .carousel {
-  margin-top: 30rem;
+  margin-top: 23rem;
   height: 40rem;
   position: relative;
   justify-content: center;
@@ -513,6 +513,10 @@ transition: all 0.3s ease;
   body{
     overflow-x: hidden;
     position: relative;
+  }
+  .carousel {
+   left: -2rem;
+   width: 43rem;
   }
   .navbar{
     background: var(--grey);
