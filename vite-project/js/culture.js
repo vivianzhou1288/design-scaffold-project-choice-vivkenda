@@ -1,6 +1,7 @@
 import "../styles/culture.css";
 import { gsap } from "gsap";
 
+/*timeline animations */
 function qs(selector, all = false) {
   return all
     ? document.querySelectorAll(selector)
@@ -52,3 +53,7 @@ function scrollHandler(e) {
 scrollHandler();
 line.style.display = "block";
 window.addEventListener("scroll", scrollHandler);
+
+/*GSAP*/
+const t1 = gsap.timeline({ delay: 0.3 });
+gsap.registerPlugin(ScrollTrigger);
