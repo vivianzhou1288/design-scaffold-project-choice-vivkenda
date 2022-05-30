@@ -297,6 +297,17 @@ svg path:hover {
   padding: 1.125rem 0;
   font-size: 3rem;
 }
+.footer h5{
+  font-size: var(--h5);
+  font-family: var(--font-family)  
+}
+.terms{
+  font-size: 2rem;
+  font-family: var(--font-family);
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: black;
+}
 .HL-pic {
   position: absolute;
   width: 33rem;
