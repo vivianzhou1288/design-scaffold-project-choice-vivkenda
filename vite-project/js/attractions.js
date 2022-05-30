@@ -10,17 +10,13 @@ gsap.from(".box", 1, {
 
 /* const carouselSlide = document.querySelector(".carousel-slide");
 const carouselImages = document.querySelectorAll(".carousel-slide img");
-
 //Buttons
 const prevBtn = document.querySelector("#prevBtn");
 const nextBtn = document.querySelector("#nextBtn");
-
 //Counter
 let counter = 1;
 const size = carouselImages[0].clientWidth;
-
 carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
-
 //Button Listeners
 nextBtn.addEventListener("click", () => {
   if (counter >= carouselImages.length - 1) return;
@@ -34,7 +30,6 @@ prevBtn.addEventListener("click", () => {
   counter--;
   carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
 });
-
 carouselSlide.addEventListener("transitionend", () => {
   if (carouselImages[counter].id === "lastClone") {
     carouselSlide.style.transition = "none";

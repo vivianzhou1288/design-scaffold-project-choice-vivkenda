@@ -1,8 +1,9 @@
 @import url("variable.css");
-
+ 
 body {
   font-family: var(--font-family);
 }
+
 .navbar{
   display: flex;
   position: relative;
@@ -52,9 +53,18 @@ ul li {
   color: #f25e5e;
   font-weight: bold;
 }
-.toggle-button{
-  display: none;
+.toggle-button {
+  display: none
 }
+.toggle-button div{
+  width: 2rem;
+  height: 0.3rem;
+  background-color: rgb(226,226,226);
+  margin-bottom: 0.5rem;
+  margin-right: 2rem;
+  transition: all 0.3s ease;
+}
+
 header {
   width: 100%;
   height: 90rem;
@@ -521,6 +531,53 @@ font-size: 1.75rem;
 }
 
 @media only screen and (max-width: 768px) {
+/*   body{
+    overflow-x: hidden;
+    position: relative;
+  } */
+  .navbar{
+    background: var(--grey);
+    height: 7rem;
+  }
+  .nav-links{
+    position: absolute;
+    right: -3rem;
+    height: 93.2vh;
+    top: 6.8vh;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .toggle-button{
+    display: block;
+  }
+  .nav-active{
+    transform: translateX(0%);
+  }
+  @keyframes navLinkFade{
+    from{
+      opacity: 0;
+      transform: translate(50px);
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+.toggle .line1{
+transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+opacity: 0;
+}
+.toggle .line3{
+transform: rotate(45deg) translate(-5px, -6px);
+}
   .container,
   .about {
     display: flex;
@@ -579,4 +636,8 @@ width: 80vw;  }
 }
 }
 
-
+@media screen and (max-width: 414px) {
+  .nav-links {
+    top: 7.8vh;
+  }
+}
