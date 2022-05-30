@@ -335,9 +335,9 @@ a:visited {
   margin: 10rem 0rem 0rem 8rem;
 }
 
-@media screen and (min-width: 600px) {
+@media only screen and (max-width: 375px) {
   .text-box h1 {
-    font-size: 9rem;
+    font-size: 5rem;
   }
   img.img3 {
     display: none;
