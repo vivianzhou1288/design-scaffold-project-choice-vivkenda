@@ -150,7 +150,7 @@ transition: all 0.3s ease;
   border-radius: 0.25rem;
   padding: 0 0.5rem;
   background-color: rgba(0, 0, 0, 0.1);
-  color: black;
+  color: white;
   display: inline-block;
   padding: 1rem;
   position: absolute;
@@ -426,6 +426,9 @@ transition: all 0.3s ease;
     column-gap: 1.438rem;
     row-gap: 1.438rem;
   }
+  .carousel{
+    height: 35rem;
+  }
 }
 @media only screen and (max-width: 1280px) {
   .collage {
@@ -436,6 +439,16 @@ transition: all 0.3s ease;
     row-gap: 1.438rem;
   }
 }
+@media only screen and (max-width: 1180px) {
+  .collage {
+    display: grid;
+    grid-template-columns: [first] 11rem [line2] 25rem [line2-5] 2rem [third] 30rem[col4-start] 5rem [col4-end] 32rem [sixth] 45rem [end];
+    grid-template-rows: [row1-start] 28rem [row1-end] 15rem [line1-5] 9rem [second] 16rem [second-end] 23.313rem [third] 9.5rem [fourth] 25.3rem [fifth] 28.688rem [end];
+    column-gap: 1.438rem;
+    row-gap: 1.438rem;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .collage {
     display: grid;
@@ -444,9 +457,238 @@ transition: all 0.3s ease;
     column-gap: 1.438rem;
     row-gap: 1.438rem;
   }
+  .box{
+    height: 110rem;
+  }
+}
+@media all and (max-width: 962px){
+  .box{
+    height: 115rem;
+  }
+  .collage {
+    display: grid;
+    grid-template-columns: [first] 0rem [line2] 25rem [line2-5] 2rem [third] 30rem[col4-start] 5rem [col4-end] 32rem [sixth] 45rem [end];
+    grid-template-rows: [row1-start] 28rem [row1-end] 15rem [line1-5] 9rem [second] 16rem [second-end] 23.313rem [third] 9.5rem [fourth] 25.3rem [fifth] 28.688rem [end];
+    column-gap: 1.438rem;
+    row-gap: 1.438rem;
+  }
 }
 
-@media only screen and (max-width: 414px) {
+@media all and (max-width: 912px){
+  .carousel{
+    height: 80rem;
+  }
+  .img-group{
+    flex-direction: column;
+  }
+  .box{
+    margin-bottom: 5rem;
+    width: 65rem;
+  }
+  img.gardens {
+    display: none;
+  }
+  img.heaven {
+    display: none;
+  }
+  img.park {
+    display: none;
+  }
+  img.walkway {
+    display: none;
+  }
+  img.jiuzhaigou {
+    display: none;
+  }
+  .aquatics{
+    width: 35.7rem;
+  }
+  .bell{
+    width: 31rem;
+    height: 28.688rem;
+  }
+  .panda {
+    grid-column-start: third;
+    width: 35.7rem; 
+  }
+  .crane{
+    width: 35.7rem; 
+  }
+  .longi{
+    width: 31rem;
+  }
+  .studio{
+    width: 31rem;
+  }
+  .ball{
+    width: 31rem;
+  }
+  .tower{
+    width: 31rem;
+  }
+  .collage {
+    display: grid;
+    grid-template-columns: [first] 10rem [line2] 32rem [third] 30rem[col4-start] 5rem [col4-end] 32rem [sixth] 45rem [end];
+    grid-template-rows: [row1-start] 28rem [row1-end] 15rem [line1-5] 9rem [second] 16rem [second-end] 23.313rem [third] 9.5rem [fourth] 25.3rem [fifth] 28.688rem [end];
+    column-gap: 1.438rem;
+    row-gap: 1.438rem;
+  }
+}
+
+@media all and (max-width: 820px){
+  .carousel{
+    height: 60rem;
+  }
+  .img-group{
+    flex-direction: column;
+  }
+  .box{
+    margin-bottom: 5rem;
+    height: 100rem;
+    width: 60rem;
+  }
+  .collage {
+    display: grid;
+    grid-template-columns: [first] 5.5rem [line2] 32rem [third] 30rem[col4-start] 5rem [col4-end] 32rem [sixth] 45rem [end];
+    grid-template-rows: [row1-start] 28rem [row1-end] 15rem [line1-5] 9rem [second] 16rem [second-end] 23.313rem [third] 9.5rem [fourth] 25.3rem [fifth] 28.688rem [end];
+    column-gap: 1.438rem;
+    row-gap: 1.438rem;
+  }
+}
+@media all and (max-width: 800px){
+  .carousel{
+    height: 70rem;
+  }
+  .collage {
+    display: grid;
+    grid-template-columns: [first] 5rem [line2] 32rem [third] 30rem[col4-start] 5rem [col4-end] 32rem [sixth] 45rem [end];
+    grid-template-rows: [row1-start] 28rem [row1-end] 15rem [line1-5] 9rem [second] 16rem [second-end] 23.313rem [third] 9.5rem [fourth] 25.3rem [fifth] 28.688rem [end];
+    column-gap: 1.438rem;
+    row-gap: 1.438rem;
+  }
+  .collage-title{
+    margin-left: 0.9rem;
+  }
+}
+@media all and (max-width: 768px) {
+  /* body{
+    overflow-x: hidden;
+    position: relative;
+  } */
+  .carousel {
+   left: -2rem;
+   width: 75rem;
+  }
+  
+  .navbar{
+    background: var(--grey);
+    height: 25rem;
+  }
+  .nav-links{
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .img-group{
+    flex-direction: column;
+  }
+  .box{
+    margin-bottom: 3rem;
+  }
+  .collage {
+    display: grid;
+    grid-template-columns: [first] 3rem [line2] 32rem [third] 30rem[col4-start] 5rem [col4-end] 32rem [sixth] 45rem [end];
+    grid-template-rows: [row1-start] 28rem [row1-end] 15rem [line1-5] 9rem [second] 16rem [second-end] 23.313rem [third] 9.5rem [fourth] 25.3rem [fifth] 28.688rem [end];
+    column-gap: 1.438rem;
+    row-gap: 1.438rem;
+  }
+}
+@media screen and (max-width: 720px){
+  .carousel{
+    height: 10rem;
+  }
+  .collage {
+    display: grid;
+    grid-template-columns: [first] 0.3rem [line2] 32rem [third] 30rem[col4-start] 5rem [col4-end] 32rem [sixth] 45rem [end];
+    grid-template-rows: [row1-start] 28rem [row1-end] 15rem [line1-5] 9rem [second] 16rem [second-end] 23.313rem [third] 9.5rem [fourth] 25.3rem [fifth] 28.688rem [end];
+    column-gap: 1.438rem;
+    row-gap: 1.438rem;
+  }
+}
+@media screen and (max-width: 601px){
+  .carousel{
+    height: 47rem;
+    width: 60rem;
+  }
+  .box{
+    width: 50rem;
+  }
+  img.crane {
+    display: none;
+  }
+  img.gardens {
+    display: none;
+  }
+  img.aquatics {
+    display: none;
+  }
+  img.heaven {
+    display: none;
+  }
+  img.city {
+    display: none;
+  }
+  img.park {
+    display: none;
+  }
+  img.yangshuo {
+    display: none;
+  }
+  img.walkway {
+    display: none;
+  }
+  img.panda {
+    display: none;
+  }
+  img.jiuzhaigou {
+    display: none;
+  }
+  .collage {
+    display: grid;
+    grid-template-columns: [first] 13rem [line2] 25rem [line2-5] 2rem [third] 30rem[col4-start] 5rem [col4-end] 32rem [sixth] 45rem [end];
+    grid-template-rows: [row1-start] 28rem [row1-end] 15rem [line1-5] 9rem [second] 16rem [second-end] 23.313rem [third] 9.5rem [fourth] 25.3rem [fifth] 28.688rem [end];
+    column-gap: 1.438rem;
+    row-gap: 1.438rem;
+  }
+  .collage-title{
+    margin-left: -0.5rem;
+  }
+}
+
+@media screen and (max-width: 540px){
+  .carousel{
+    height: 25rem;
+    width: 55rem;
+  }
+  .box{
+    width: 45rem;
+  }
+  .collage {
+    display: grid;
+    grid-template-columns: [first] 10.5rem [line2] 25rem [line2-5] 2rem [third] 30rem[col4-start] 5rem [col4-end] 32rem [sixth] 45rem [end];
+    grid-template-rows: [row1-start] 28rem [row1-end] 15rem [line1-5] 9rem [second] 16rem [second-end] 23.313rem [third] 9.5rem [fourth] 25.3rem [fifth] 28.688rem [end];
+    column-gap: 1.438rem;
+    row-gap: 1.438rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .carousel{
+    height: 40rem;
+    width: 45rem;
+  }
+  .nav-links {
+    top: 7.8vh;
+  }
   img.crane {
     display: none;
   }
@@ -482,7 +724,7 @@ transition: all 0.3s ease;
     grid-column-end: line2-5;
     grid-row-start: fifth;
     grid-row-end: end;
-    width: 27.813rem;
+    width: 31rem;
     height: 28.688rem;
     object-fit: cover;
   }
@@ -496,10 +738,11 @@ transition: all 0.3s ease;
   }
   .box {
     margin-bottom: 5rem;
+    width: 35rem;
   }
   .collage {
     display: grid;
-    grid-template-columns: [first] 4.5rem [line2] 25rem [line2-5] 2rem [third] 30rem[col4-start] 5rem [col4-end] 32rem [sixth] 45rem [end];
+    grid-template-columns: [first] 4rem [line2] 25rem [line2-5] 2rem [third] 30rem[col4-start] 5rem [col4-end] 32rem [sixth] 45rem [end];
     grid-template-rows: [row1-start] 28rem [row1-end] 15rem [line1-5] 9rem [second] 16rem [second-end] 23.313rem [third] 9.5rem [fourth] 25.3rem [fifth] 28.688rem [end];
     column-gap: 1.438rem;
     row-gap: 1.438rem;
@@ -507,86 +750,37 @@ transition: all 0.3s ease;
   .slide > img {
     width: 100%;
   }
+  .collage-title{
+    margin-left: -0.7rem;
+  }
 }
-.footer {
-  width: 100%;
-  text-align: center;
-  padding: 1.875rem 0;
+@media only screen and (max-width: 393px){
+  .collage {
+    display: grid;
+    grid-template-columns: [first] 3rem [line2] 25rem [line2-5] 2rem [third] 30rem[col4-start] 5rem [col4-end] 32rem [sixth] 45rem [end];
+    grid-template-rows: [row1-start] 28rem [row1-end] 15rem [line1-5] 9rem [second] 16rem [second-end] 23.313rem [third] 9.5rem [fourth] 25.3rem [fifth] 28.688rem [end];
+    column-gap: 1.438rem;
+    row-gap: 1.438rem;
+  }
+  .collage-title {
+    justify-content: center;
+    margin-left: -0.7rem;
+  }
+  .carousel{
+    width: 41.5rem;
+  }
+  .logo{
+    margin-left:-2rem;
+  }
 }
-.icons .fa {
-  color: black;
-  margin: 0 0.813rem;
-  cursor: pointer;
-  padding: 1.125rem 0;
-  font-size: 3rem;
-}
-@media all and (max-width: 768px) {
-  /* body{
-    overflow-x: hidden;
-    position: relative;
-  } */
-  .carousel {
-   left: -2rem;
-   width: 75rem;
-  }
-  
-  .navbar{
-    background: var(--grey);
-    height: 25rem;
-  }
-  .nav-links{
-   /*  position: absolute;
-    right: -3rem;
-    height: 93.2vh;
-    top: 6.8vh;
-    background-color: orange;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    width: 50%;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in; */
-    flex-direction: column;
-    padding: 1rem;
-  }
-  .toggle-button{
-    display: none;
-  }
-  .nav-active{
-    transform: translateX(0%);
-  }
-  @keyframes navLinkFade{
-    from{
-      opacity: 0;
-      transform: translate(50px);
-    }
-    to{
-      opacity: 1;
-      transform: translateX(0px);
-    }
-  }
 
-.toggle .line1{
-transform: rotate(-45deg) translate(-5px, 6px);
-}
-.toggle .line2{
-opacity: 0;
-}
-.toggle .line3{
-transform: rotate(45deg) translate(-5px, -6px);
-}
-}
-@media screen and (max-width: 414px) {
-  .nav-links {
-    top: 7.8vh;
-  }
-}
 @media only screen and (max-width: 390px) {
   .collage-title {
     justify-content: center;
-    margin-left: 0.7rem;
+    margin-left: -0.7rem;
   }
 }
+
 @media only screen and (max-width: 375px) {
   .collage {
     display: grid;
@@ -598,5 +792,26 @@ transform: rotate(45deg) translate(-5px, -6px);
   .logo{
     margin-left:-3rem;
   }
-  
+  .carousel{
+    height: 20rem;
+    width: 40rem;
+  }
+  .box{
+    width: 33rem;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .collage {
+    display: grid;
+    grid-template-columns: [first] 2.5rem [line2] 25rem [line2-5] 2rem [third] 30rem[col4-start] 5rem [col4-end] 32rem [sixth] 45rem [end];
+    grid-template-rows: [row1-start] 28rem [row1-end] 15rem [line1-5] 9rem [second] 16rem [second-end] 23.313rem [third] 9.5rem [fourth] 25.3rem [fifth] 28.688rem [end];
+    column-gap: 1.438rem;
+    row-gap: 1.438rem;
+  }
+  .collage-title{
+    margin-left: -1rem;
+  }
+  .logo{
+    margin-left:-4rem;
+  }
 }

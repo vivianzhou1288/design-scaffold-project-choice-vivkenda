@@ -641,3 +641,18 @@ width: 80vw;  }
     top: 7.8vh;
   }
 }
+@media screen and (max-width: 393px) {
+  .nav-links{
+    top: 8.23vh;
+  }
+}
+@media screen and (max-width: 390px) {
+  .nav-links{
+    top: 8.36vh;
+  }
+}
+@media screen and (max-width: 375px) {
+  .nav-links{
+    top: 10.5vh;
+  }
+}
