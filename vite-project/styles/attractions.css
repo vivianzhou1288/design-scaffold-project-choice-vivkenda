@@ -85,8 +85,8 @@
   object-fit: cover;
 } */
 .carousel {
-  margin-top: 30rem;
-  height: 40rem;
+  margin-top: 23rem;
+  height: 55rem;
   position: relative;
   justify-content: center;
   align-items: center;
@@ -489,4 +489,109 @@
     margin-bottom: 15rem;
     position: relative;
   }
+  .box {
+    margin-bottom: 5rem;
+  }
+  .collage {
+    display: grid;
+    grid-template-columns: [first] 4.5rem [line2] 25rem [line2-5] 2rem [third] 30rem[col4-start] 5rem [col4-end] 32rem [sixth] 45rem [end];
+    grid-template-rows: [row1-start] 28rem [row1-end] 15rem [line1-5] 9rem [second] 16rem [second-end] 23.313rem [third] 9.5rem [fourth] 25.3rem [fifth] 28.688rem [end];
+    column-gap: 1.438rem;
+    row-gap: 1.438rem;
+  }
+  .slide > img {
+    width: 100%;
+  }
+}
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 1.875rem 0;
+}
+.icons .fa {
+  color: black;
+  margin: 0 0.813rem;
+  cursor: pointer;
+  padding: 1.125rem 0;
+  font-size: 3rem;
+}
+@media all and (max-width: 768px) {
+  /* body{
+    overflow-x: hidden;
+    position: relative;
+  } */
+  .carousel {
+   left: -2rem;
+   width: 75rem;
+  }
+  
+  .navbar{
+    background: var(--grey);
+    height: 25rem;
+  }
+  .nav-links{
+   /*  position: absolute;
+    right: -3rem;
+    height: 93.2vh;
+    top: 6.8vh;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in; */
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .toggle-button{
+    display: none;
+  }
+  .nav-active{
+    transform: translateX(0%);
+  }
+  @keyframes navLinkFade{
+    from{
+      opacity: 0;
+      transform: translate(50px);
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+.toggle .line1{
+transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+opacity: 0;
+}
+.toggle .line3{
+transform: rotate(45deg) translate(-5px, -6px);
+}
+}
+@media screen and (max-width: 414px) {
+  .nav-links {
+    top: 7.8vh;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .collage-title {
+    justify-content: center;
+    margin-left: 0.7rem;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .collage {
+    display: grid;
+    grid-template-columns: [first] 3.5rem [line2] 25rem [line2-5] 2rem [third] 30rem[col4-start] 5rem [col4-end] 32rem [sixth] 45rem [end];
+    grid-template-rows: [row1-start] 28rem [row1-end] 15rem [line1-5] 9rem [second] 16rem [second-end] 23.313rem [third] 9.5rem [fourth] 25.3rem [fifth] 28.688rem [end];
+    column-gap: 1.438rem;
+    row-gap: 1.438rem;
+  }
+  .logo{
+    margin-left:-3rem;
+  }
+  
 }
