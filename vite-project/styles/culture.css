@@ -52,8 +52,17 @@ ul li {
   color: #f25e5e;
   font-weight: bold;
 }
-.toggle-button{
-  display: none;
+.toggle-button {
+  display: none
+}
+
+.toggle-button div{
+width: 2rem;
+height: 0.3rem;
+background-color: rgb(226,226,226);
+margin-bottom: 0.5rem;
+margin-right: 2rem;
+transition: all 0.3s ease;
 }
 header {
   width: 100%;
@@ -64,7 +73,7 @@ header {
   margin-bottom: 10rem;
 }
 /* Header img and title*/
-.heading {
+.title {
   font-size: 10rem;
   color: white;
   font-family: var(--font-family);
@@ -75,7 +84,6 @@ header {
   top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 1;
 }
 
 /*Intro 3 flexbox*/
@@ -85,8 +93,7 @@ header {
   justify-content: center;
   align-items: center;
   height: 35vh;
-  margin-bottom: 18rem;
-  margin-top: 15rem;
+  margin-bottom: 10rem;
 }
 
 .content {
@@ -95,7 +102,6 @@ header {
   margin: 2rem;
   height: 40vh;
   justify-content: center;
-  opacity: 0;
 }
 
 .content p {
@@ -129,11 +135,14 @@ header {
 .row {
   display: flex;
   align-items: center;
+  margin-bottom: -3rem;
 }
-
 .grid-text {
+  margin-right: 6rem;
   transform: translate(0, 2rem);
-  margin-right: 4rem;
+  width: 80rem;
+  justify-content: center;
+  align-items: center;
 }
 .grid-text h1 {
   font-size: 3rem;
@@ -150,7 +159,6 @@ header {
 
 .card {
   margin: 2rem;
-  justify-content: center;
 }
 
 .square-grid img {
@@ -160,51 +168,15 @@ header {
   align-items: center;
 }
 
-.shadow, .shadow1{
-  position: absolute;
-  top: 0rem;
-  left: 0rem;
-  bottom: 0rem;
-  right: 0rem;
-  display: flex;
-  opacity: 1;
-  flex-direction: column;
+.grid-title {
   justify-content: center;
-  align-items: center;
-}
-.shadow1{
-background-color: rgba(0, 0, 0, 0.5);
-opacity: 0;
-transition: opacity 0.6s;
-}
-.card:hover .shadow1{
-  opacity: 1;
-}
-
-.card{
-  position: relative;
-  width: 100%;
-  transition: 0.5s;
-}
-.card:hover{
-  transform: scale(1.05);
-}
-.grid-title{
+  transform: translate(0, -300%);
   font-size: 3rem;
   color: white;
-  z-index: 1;
-  font-weight: bold;
   text-shadow: 1rem 1rem 1rem rgb(0, 0, 0);
   text-decoration: none;
 }
-
 /*Holidays Section*/
-.holiday-header{
-  font-size: 5rem;
-  text-align: center;
-margin-bottom: 3rem;
- 
-}
 .holidays1,
 .holidays2 {
   display: flex;
@@ -253,65 +225,11 @@ margin-bottom: 3rem;
 }
 
 /*Tradition Collage*/
-.traditions-grid {
+.tradition-collage {
+  height: 200vh;
   width: 100%;
   background-color: lightgrey;
   margin-top: 10rem;
-  justify-content: center;
-  position: relative;
-  margin-top: 10rem;
-  text-align: center;
-}
-.traditions-header{
-  font-size: 3.5rem;
-  text-align: center;
-padding-top: 4rem;
-margin-top: 3rem;
-}
-.grid-card{
-  height: 36rem;
-  background-color: white;
-  text-align: center;
-position: relative;
-transition: 0.6s;
-background: black;
-border-radius: 2rem;
-margin: 2rem;
-}
-
-.grid-card img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-opacity: 0.6;border-radius: 2rem;}
-
-.grid-card a{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-55%,-50%);
-  color: white;
-  font-size: 3rem;
-  font-weight: bold;
-}
-.grid-group{
-    width: 90%;
-    margin: 0 auto;
-    display: grid;
-    gap: 3rem;
-    padding: 10rem;
-}
-
-.grid-card:hover{
-  transform: translateY(-2rem);
-}
-
-@media (min-width: 600px) {
-  .grid-group { grid-template-columns: repeat(2, 1fr); }
-}
-
-@media (min-width: 900px) {
-  .grid-group { grid-template-columns: repeat(3, 1fr);}
 }
 
 /*History Timeline*/
@@ -462,7 +380,6 @@ font-size: 1.75rem;
     width: 25vw;
   }
 }
-
 @media only screen and (max-width: 1110px) {
   .content p {
     font-size: 1.6rem;
@@ -473,32 +390,113 @@ font-size: 1.75rem;
 }
 
 @media only screen and (max-width: 970px) {
-  header{
-    height: 60vh;
-  }
-  .heading{
-    font-size: 6rem;
-    margin-top: 20%;
-  }
   .grid-text {
-    transform: translateY(5%);
+    transform: translate(0, -2rem);
+    width: 70vw;
   }
-  .grid-text p{
-    font-size: 1.75rem;
-    width: 30rem;
-  }
-  .grid-text h1{
-    font-size: 2rem;
-}
-.about{
-  display: flex;
-  justify-content: center;
-}
-
   .square-grid img {
-    width: 20vw;
+    width: 25vw;
     height: 25vh;
   }
+
+}
+@media all and (max-width: 768px) {
+  body{
+    overflow-x: hidden;
+    position: relative;
+  }
+  .navbar{
+    background: var(--grey);
+    height: 7rem;
+  }
+  .nav-links{
+    position: absolute;
+    right: -3rem;
+    height: 93.2vh;
+    top: 6.8vh;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .toggle-button{
+    display: block;
+  }
+  .nav-active{
+    transform: translateX(0%);
+  }
+  @keyframes navLinkFade{
+    from{
+      opacity: 0;
+      transform: translate(50px);
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+.toggle .line1{
+transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+opacity: 0;
+}
+.toggle .line3{
+transform: rotate(45deg) translate(-5px, -6px);
+}
+.container,
+.about {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  align-items: center;
+}
+
+.grid-text {
+  align-items: center;
+  justify-content: center;
+}
+.content img {
+  height: 25vh;
+}
+.content {
+  width: 50vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+}
+
+.holidays1,
+.holidays2 {
+  margin-bottom: -8rem;
+}
+.img {
+  margin-top: 0rem;
+}
+.event-description:nth-child(even){
+  flex-direction: row-reverse;
+}
+.timeline{
+  transform: translateX(-30%);
+}
+}
+
+@media screen and (max-width: 414px) {
+  .nav-links {
+    top: 7.8vh;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .flexbox p{
+    width: 80vw;
+  }
+  .img {
+width: 80vw;  }
+}
 
   .holidays1 {
     flex-wrap: wrap;
@@ -508,7 +506,7 @@ font-size: 1.75rem;
   }
   .holidays1,
   .holidays2 {
-    margin-bottom: -12rem;
+    margin-bottom: -20rem;
   }
   .flexbox {
     height: 40vh;
@@ -516,67 +514,3 @@ font-size: 1.75rem;
   .img {
     margin-top: 10rem;
   }
-
-
-}
-
-@media only screen and (max-width: 768px) {
-  .container,
-  .about {
-    display: flex;
-    flex-direction: column;
-    height: fit-content;
-    align-items: center;
-  }
-
-  .grid-text p{
-    margin-bottom: 2rem;
-    display: flex;
-    width: 100%;}
-
-  .card img{
-    width: 70vw;
-    height: 50vh;
-  }
- 
-  .content {
-    width: 50vw;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: auto;
-  }
-  .row{
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-
-  .holidays1,
-  .holidays2 {
-    margin-bottom: -8rem;
-  }
-  .img {
-    margin-top: 0rem;
-  }
-  .event-description:nth-child(even){
-    flex-direction: row-reverse;
-  }
-  .timeline{
-    transform: translateX(-30%);
-  }
-
- 
-}
-
-@media only screen and (max-width: 650px) {
-  .flexbox p{
-    width: 80vw;
-  }
-  .img {
-width: 80vw;  }
-.heading{
-
-  margin-top: 30%;
-}
-}
-
-
