@@ -335,11 +335,14 @@ a:visited {
   margin: 10rem 0rem 0rem 8rem;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 600px) {
   .text-box h1 {
-    font-size: 5rem;
+    font-size: 9rem;
   }
   img.img3 {
     display: none;
+  }
+  .top-imgs {
+    
   }
 }
