@@ -418,6 +418,17 @@ transition: all 0.3s ease;
   padding: 1.125rem 0;
   font-size: 3rem;
 }
+.footer h5{
+  font-size: var(--h5);
+  font-family: var(--font-family)  
+}
+.terms{
+  font-size: 2rem;
+  font-family: var(--font-family);
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: black;
+}
 @media only screen and (max-width: 1600px) {
   .collage {
     display: grid;
