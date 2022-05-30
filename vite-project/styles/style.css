@@ -7,6 +7,7 @@
   left: 0rem;
   top: 0rem;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 1% 6%;
@@ -244,13 +245,17 @@ path {
   -o-transition: all 150ms;
   transition: all 150ms;
 }
-
-path:hover {
-  fill: #f25e5e;
-  cursor: pointer;
+svg path {
+  stroke: #eee;
+  stroke-width: 0.25;
+  fill: grey;
 }
 
-
+svg path:hover {
+  fill: #f25e5e;
+  transition: 0.6s;
+  cursor: pointer;
+}
 .highlights {
   margin-top: -11rem;
   height: 78rem;

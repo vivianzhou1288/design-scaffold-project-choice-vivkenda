@@ -18,7 +18,7 @@ gsap.to(
   {
     scrollTrigger: {
       trigger: ".words",
-      start: "bottom center",
+      start: "top top",
     },
     y: -25,
     opacity: 1,
