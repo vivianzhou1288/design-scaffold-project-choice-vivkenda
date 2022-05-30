@@ -289,6 +289,7 @@ svg path:hover {
   width: 100%;
   text-align: center;
   padding: 1.875rem 0;
+  background: lightcoral;
 }
 .icons .fa {
   color: black;
@@ -296,6 +297,17 @@ svg path:hover {
   cursor: pointer;
   padding: 1.125rem 0;
   font-size: 3rem;
+}
+.footer h5{
+  font-size: var(--h5);
+  font-family: var(--font-family)  
+}
+.terms{
+  font-size: 2rem;
+  font-family: var(--font-family);
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: black;
 }
 .HL-pic {
   position: absolute;
