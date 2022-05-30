@@ -1,29 +1,8 @@
 import "../styles/culture.css";
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-const path = document.querySelectorAll("path");
-const map = document.querySelector(".mapOfChina");
-const navSlide = () => {
-  const menu = document.querySelector(".toggle-button");
-  const nav = document.querySelector(".nav-links");
-  const navLinks = document.querySelector(".nav-links li");
-
-  menu.addEventListener("click", () => {
-    nav.classList.toggle("nav-active");
-    console.log(Object.keys(navLinks));
-    Object.keys(navLinks).forEach((link, index) => {
-      if (link.style.animation) {
-        link.style.animation = "";
-      } else {
-        link.style.animation = `navLinkFade 0.5s ease forwards ${
-          index / 7 + 0.3
-        }s`;
-      }
-    });
-    menu.classList.toggle("toggle");
-  });
-};
-navSlide();
+/*timeline animations */
 function qs(selector, all = false) {
   return all
     ? document.querySelectorAll(selector)
@@ -75,3 +54,109 @@ function scrollHandler(e) {
 scrollHandler();
 line.style.display = "block";
 window.addEventListener("scroll", scrollHandler);
+
+/*GSAP*/
+const tl = gsap.timeline({ delay: 0.3 });
+gsap.registerPlugin(ScrollTrigger);
+
+tl.from(".heading", {
+  opacity: 0,
+  duration: 1.3,
+  x: -50,
+});
+gsap.to(
+  ".content",
+  {
+    scrollTrigger: {
+      trigger: ".content",
+      start: "top center",
+    },
+    y: -45,
+    opacity: 1,
+    duration: 1.75,
+    ease: "back.out(1.7)",
+    stagger: 0.3,
+  },
+  "-=1.5"
+);
+
+gsap.from(".newYear", {
+  scrollTrigger: {
+    trigger: ".newYear",
+    start: "top center",
+  },
+  x: -120,
+  opacity: 0,
+  duration: 3,
+  ease: "circ.out",
+  stagger: 0.5,
+});
+
+gsap.from(".dragonBoat", {
+  scrollTrigger: {
+    trigger: ".dragonBoat",
+    start: "center bottom",
+  },
+  x: 120,
+  opacity: 0,
+  duration: 3,
+  ease: "circ.out",
+  stagger: 1,
+});
+
+gsap.from(".mid-autumn", {
+  scrollTrigger: {
+    trigger: ".mid-autumn",
+    start: "center bottom",
+  },
+  x: -120,
+  opacity: 0,
+  duration: 3,
+  ease: "circ.out",
+  stagger: 0.5,
+});
+
+gsap.from(".national-day", {
+  scrollTrigger: {
+    trigger: ".national-day",
+    start: "center bottom",
+  },
+  x: 120,
+  opacity: 0,
+  duration: 3,
+  ease: "circ.out",
+  stagger: 0.5,
+});
+
+gsap.from(".winter-solistice", {
+  scrollTrigger: {
+    trigger: ".winter-solistice",
+    start: "center bottom",
+  },
+  x: -120,
+  opacity: 0,
+  duration: 3,
+  ease: "circ.out",
+  stagger: 0.5,
+});
+const navSlide = () => {
+  const menu = document.querySelector(".toggle-button");
+  const nav = document.querySelector(".nav-links");
+  const navLinks = document.querySelector(".nav-links li");
+
+  menu.addEventListener("click", () => {
+    nav.classList.toggle("nav-active");
+    console.log(Object.keys(navLinks));
+    Object.keys(navLinks).forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = "";
+      } else {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${
+          index / 7 + 0.3
+        }s`;
+      }
+    });
+    menu.classList.toggle("toggle");
+  });
+};
+navSlide();
