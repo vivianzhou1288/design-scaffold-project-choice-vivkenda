@@ -108,13 +108,20 @@ header {
   justify-content: center;
   margin-top: 85rem;
 }
+.flex-map {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10rem;
+  margin-left: -10rem;
+}
 .china-subheader {
-  position: absolute;
+  flex: 1;
   font-family: var(--font-family);
   font-size: 8.5rem;
   font-weight: 80px;
   transform: rotate(-90deg);
-  top: 180rem;
   left: 3rem;
 
   color: white;
@@ -125,24 +132,20 @@ header {
   padding-left: 45rem;
 }
 .subheader1 {
-  position: absolute;
   font-family: var(--font-family);
-  font-size: 4rem;
-  width: 1rem;
-  top: 150rem;
-  left: 54rem;
+  font-size: 4.5rem;
+  flex: 1;
+  margin-left: -30rem;
+  padding-bottom: 60rem;
 }
 .mapOfChina {
-  width: 90rem;
-  position: absolute;
-  top: 155rem;
-  left: 68rem;
+  margin-top: 10rem;
+  margin-right: 25rem;
 }
-
 .facts {
   display: flex;
   align-items: center;
-  margin-top: 105rem;
+  margin-top: 10rem;
   justify-content: center;
 
   font-family: var(--font-family);
@@ -264,27 +267,6 @@ svg path:hover {
   transition: 0.6s;
   cursor: pointer;
 }
-.highlights {
-  margin-top: -11rem;
-  height: 78rem;
-  background-color: rgb(230, 230, 230);
-  font-family: var(--font-family);
-  position: relative;
-}
-.highlights h5 {
-  font-size: 4.5rem;
-  margin-bottom: 2.5rem;
-}
-.highlights h6 {
-  font-size: 2.5rem;
-  width: 45rem;
-}
-.HL-text {
-  padding: 10rem;
-}
-.line {
-  background-color: black;
-}
 .footer {
   width: 100%;
   text-align: center;
@@ -307,6 +289,27 @@ svg path:hover {
   margin-bottom: 1rem;
   text-decoration: none;
   color: black;
+}
+.highlights {
+  margin-top: -11rem;
+  height: 78rem;
+  background-color: rgb(230, 230, 230);
+  font-family: var(--font-family);
+  position: relative;
+}
+.highlights h5 {
+  font-size: 4.5rem;
+  margin-bottom: 2.5rem;
+}
+.highlights h6 {
+  font-size: 2.5rem;
+  width: 45rem;
+}
+.HL-text {
+  padding: 10rem;
+}
+.line {
+  background-color: black;
 }
 .HL-pic {
   position: absolute;
@@ -418,28 +421,115 @@ transform: rotate(45deg) translate(-5px, -6px);
     top: 7.8vh;
   }
   header {
-    width: 100%;
-    height: 70rem;
+    max-height: 80rem;
   }
   .text-box h1 {
-    font-size: 8rem;
-  }
-  .text-box h2 {
-    font-size: 3rem;
+    font-size: 9rem;
   }
   img.img3 {
     display: none;
   }
-  .top-imgs {
-    margin-top: 54rem;
+  .header-img {
+    margin-top: -15rem;
+    width: 14rem;
+    height: 30rem;
+    box-shadow: var(--light-grey) -1.5rem -1.6rem;
   }
-  .mapOfChina {
-    display: none;
+  .img1 {
+    margin-right: -2rem;
   }
-  .more-info {
+  .flex-map {
     display: flex;
     flex-direction: column;
+    
   }
+  .china-subheader {
+    margin-top: -13rem;
+    margin-bottom: 3rem;
+    font-size: 6rem;
+    padding-left: 5rem;
+    line-height: 12rem;
+    transform: rotate(0deg);
+    width: 100%;
+    text-align: center;
+  }
+  .subheader1 {
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    width: 30rem;
+    text-align: center;
+  }
+  .mapOfChina {
+    width: 33rem;
+    margin-left: 35rem;
+    margin-top: -83rem;
+  }
+  .facts {
+    margin-top: -20rem;
+   font-size: 5rem;
+   display: flex;
+   flex-wrap: wrap;
+  }
+  .box {
+    width: 4rem;
+  }
+  .cities  {
+    margin-top: -1rem;
+  }
+  .area {
+    margin-top: -1rem;
+  }
+  
+  .more-info {
+    display: grid;
+    grid-template-columns: [first] 0% [line2] auto[line3] 0% [end];
+    grid-template-rows: [first-line] 33% [second-line] 33% [third-line] 33% [last-line];
+    row-gap: rem;
+    margin-top: 20rem;
+
+  }
+  .panda {
+    grid-column-start: line2;
+    grid-column-end: line3;
+    grid-row-start: first-line;
+    grid-row-end: second-line;
+    width: 40rem;
+    height: 35rem;
+    object-fit: cover;
+  }
+   .building {
+    grid-column-start: line2;
+    grid-row-start: second-line;
+    grid-row-end: third-line;
+    max-width: 70%;
+    height: 35rem;
+    object-fit: cover;
+  }
+  .chongqing {
+    grid-column-start: line2;
+    grid-row-start: third-line;
+    grid-row-end: last-line;
+    width: 40rem;
+    height: 35rem;
+    object-fit: cover;
+  }
+
+.highlights h5 {
+  font-size: 3rem;
+margin-left: -6rem;
+margin-top: -6rem;
+}
+.highlights p {
+  font-size: 2rem;
+  margin-left: -6rem;
+  width: 30rem;
+}
+.icon {
+  display: none;
+}
+.HL-img {
+  
+}
 }
 @media screen and (max-width: 393px) {
   .nav-links{
@@ -456,4 +546,8 @@ transform: rotate(45deg) translate(-5px, -6px);
     top: 10.5vh;
   }
 }
-
+@media screen and (max-width: 360px){
+  .nav-links{
+    top: 9.5vh;
+  }
+}
