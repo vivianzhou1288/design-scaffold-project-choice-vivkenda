@@ -87,7 +87,7 @@ gsap.from(".newYear", {
   },
   x: -120,
   opacity: 0,
-  duration: 3,
+  duration: 2,
   ease: "circ.out",
   stagger: 0.5,
 });
@@ -99,9 +99,9 @@ gsap.from(".dragonBoat", {
   },
   x: 120,
   opacity: 0,
-  duration: 3,
+  duration: 2,
   ease: "circ.out",
-  stagger: 1,
+  stagger: 0.5,
 });
 
 gsap.from(".mid-autumn", {
@@ -111,7 +111,7 @@ gsap.from(".mid-autumn", {
   },
   x: -120,
   opacity: 0,
-  duration: 3,
+  duration: 2,
   ease: "circ.out",
   stagger: 0.5,
 });
@@ -123,7 +123,7 @@ gsap.from(".national-day", {
   },
   x: 120,
   opacity: 0,
-  duration: 3,
+  duration: 2,
   ease: "circ.out",
   stagger: 0.5,
 });
@@ -135,7 +135,7 @@ gsap.from(".winter-solistice", {
   },
   x: -120,
   opacity: 0,
-  duration: 3,
+  duration: 2,
   ease: "circ.out",
   stagger: 0.5,
 });
