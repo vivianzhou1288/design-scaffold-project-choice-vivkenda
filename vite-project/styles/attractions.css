@@ -545,7 +545,23 @@ transition: all 0.3s ease;
     row-gap: 1.438rem;
   }
 }
-
+@media all and (max-width: 896px){
+  .carousel{
+    height: 3rem;
+  }
+  .collage-title{
+    margin-left: 1rem;
+  }
+}
+@media all and (max-width: 851px){
+  .collage {
+    display: grid;
+    grid-template-columns: [first] 8rem [line2] 32rem [third] 30rem[col4-start] 5rem [col4-end] 32rem [sixth] 45rem [end];
+    grid-template-rows: [row1-start] 28rem [row1-end] 15rem [line1-5] 9rem [second] 16rem [second-end] 23.313rem [third] 9.5rem [fourth] 25.3rem [fifth] 28.688rem [end];
+    column-gap: 1.438rem;
+    row-gap: 1.438rem;
+}
+}
 @media all and (max-width: 820px){
   .carousel{
     height: 60rem;
@@ -613,6 +629,18 @@ transition: all 0.3s ease;
     row-gap: 1.438rem;
   }
 }
+@media screen and (max-width: 740px){
+  .collage {
+    display: grid;
+    grid-template-columns: [first] 1.2rem [line2] 32rem [third] 30rem[col4-start] 5rem [col4-end] 32rem [sixth] 45rem [end];
+    grid-template-rows: [row1-start] 28rem [row1-end] 15rem [line1-5] 9rem [second] 16rem [second-end] 23.313rem [third] 9.5rem [fourth] 25.3rem [fifth] 28.688rem [end];
+    column-gap: 1.438rem;
+    row-gap: 1.438rem;
+  }
+  .carousel{
+    height: 1rem;
+  }
+}
 @media screen and (max-width: 720px){
   .carousel{
     height: 10rem;
@@ -623,6 +651,32 @@ transition: all 0.3s ease;
     grid-template-rows: [row1-start] 28rem [row1-end] 15rem [line1-5] 9rem [second] 16rem [second-end] 23.313rem [third] 9.5rem [fourth] 25.3rem [fifth] 28.688rem [end];
     column-gap: 1.438rem;
     row-gap: 1.438rem;
+  }
+}
+@media screen and (max-width: 667px){
+  .carousel{
+    height: 0.5rem;
+    width: 65.5rem;
+  }
+  .aquatics{
+    width: 30rem;
+  }
+  .bell{
+    width: 31rem;
+    height: 28.688rem;
+  }
+  .panda {
+    grid-column-start: third;
+    width: 30rem; 
+  }
+  .crane{
+    width: 30rem; 
+  }
+  .city{
+    width: 30rem;
+  }
+  .yangshuo{
+    width: 30rem;
   }
 }
 @media screen and (max-width: 601px){
@@ -795,7 +849,7 @@ transition: all 0.3s ease;
 @media only screen and (max-width: 375px) {
   .collage {
     display: grid;
-    grid-template-columns: [first] 3.5rem [line2] 25rem [line2-5] 2rem [third] 30rem[col4-start] 5rem [col4-end] 32rem [sixth] 45rem [end];
+    grid-template-columns: [first] 2.5rem [line2] 25rem [line2-5] 2rem [third] 30rem[col4-start] 5rem [col4-end] 32rem [sixth] 45rem [end];
     grid-template-rows: [row1-start] 28rem [row1-end] 15rem [line1-5] 9rem [second] 16rem [second-end] 23.313rem [third] 9.5rem [fourth] 25.3rem [fifth] 28.688rem [end];
     column-gap: 1.438rem;
     row-gap: 1.438rem;
@@ -814,7 +868,7 @@ transition: all 0.3s ease;
 @media only screen and (max-width: 360px) {
   .collage {
     display: grid;
-    grid-template-columns: [first] 2.5rem [line2] 25rem [line2-5] 2rem [third] 30rem[col4-start] 5rem [col4-end] 32rem [sixth] 45rem [end];
+    grid-template-columns: [first] 1.5rem [line2] 25rem [line2-5] 2rem [third] 30rem[col4-start] 5rem [col4-end] 32rem [sixth] 45rem [end];
     grid-template-rows: [row1-start] 28rem [row1-end] 15rem [line1-5] 9rem [second] 16rem [second-end] 23.313rem [third] 9.5rem [fourth] 25.3rem [fifth] 28.688rem [end];
     column-gap: 1.438rem;
     row-gap: 1.438rem;
