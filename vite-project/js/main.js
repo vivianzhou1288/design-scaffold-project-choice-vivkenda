@@ -65,3 +65,21 @@ const navSlide = () => {
   });
 };
 navSlide();
+
+const DOMSelectors = {
+  normal: document.querySelector("#normal"),
+  china: document.querySelector("#china"),
+  body: document.getElementById("fullbody"),
+  highlights: document.getElementById("highlights"),
+};
+
+//fnormal
+document.querySelector("#normal").addEventListener("click", function () {
+  DOMSelectors.body.style.backgroundColor = "white";
+  DOMSelectors.highlights.style.backgroundColor = "rgb(230, 230, 230)";
+});
+//yellow
+document.querySelector("#china").addEventListener("click", function () {
+  DOMSelectors.body.style.backgroundColor = "lightyellow";
+  DOMSelectors.highlights.style.backgroundColor = "#E9967A";
+});

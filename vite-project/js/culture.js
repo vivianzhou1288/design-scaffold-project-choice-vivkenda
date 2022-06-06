@@ -160,3 +160,24 @@ const navSlide = () => {
   });
 };
 navSlide();
+
+const DOMSelectors = {
+  normal: document.querySelector("#normal"),
+  china: document.querySelector("#china"),
+  body: document.getElementById("fullbody"),
+  about: document.querySelector(".about"),
+  traditions: document.querySelector(".traditions-grid"),
+};
+
+//normal
+document.querySelector("#normal").addEventListener("click", function () {
+  DOMSelectors.body.style.backgroundColor = "white";
+  DOMSelectors.about.style.backgroundColor = "#dcdcdc";
+  DOMSelectors.traditions.style.backgroundColor = "#dcdcdc";
+});
+//yellow
+document.querySelector("#china").addEventListener("click", function () {
+  DOMSelectors.body.style.backgroundColor = "lightyellow";
+  DOMSelectors.about.style.backgroundColor = "#E9967A";
+  DOMSelectors.traditions.style.backgroundColor = "#E9967A";
+});

@@ -113,6 +113,9 @@ const food = [
 const DOMSelectors = {
   display: document.querySelector(".display"),
   displayCard: document.querySelector(".display-card"),
+  normal: document.querySelector("#normal"),
+  china: document.querySelector("#china"),
+  body: document.getElementById("fullbody"),
 };
 
 food.forEach((food) => {
@@ -151,3 +154,12 @@ const navSlide = () => {
   });
 };
 navSlide();
+
+//normal
+document.querySelector("#normal").addEventListener("click", function () {
+  DOMSelectors.body.style.backgroundColor = "white";
+});
+//yellow
+document.querySelector("#china").addEventListener("click", function () {
+  DOMSelectors.body.style.backgroundColor = "lightyellow";
+});

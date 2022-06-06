@@ -84,3 +84,18 @@ const navSlide = () => {
   });
 };
 navSlide();
+
+const DOMSelectors = {
+  normal: document.querySelector("#normal"),
+  china: document.querySelector("#china"),
+  body: document.getElementById("fullbody"),
+};
+
+//normal
+document.querySelector("#normal").addEventListener("click", function () {
+  DOMSelectors.body.style.backgroundColor = "white";
+});
+//yellow
+document.querySelector("#china").addEventListener("click", function () {
+  DOMSelectors.body.style.backgroundColor = "lightyellow";
+});
