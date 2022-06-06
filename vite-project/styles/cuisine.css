@@ -221,6 +221,7 @@ header {
   margin: 100px;
   margin-left: 200px;
   margin-right: 200px;
+  margin-top: 250px;
 }
 .btn {
   align-items: center;
@@ -416,7 +417,19 @@ transform: rotate(45deg) translate(-5px, -6px);
   .hotpot img{
     display: none;
   }
-}
+    .buttons {
+      display: flex;
+      justify-content: space-around;
+      margin: 100px;
+      margin-left: 200px;
+      margin-right: 200px;
+    }
+    .btn{
+      padding-left: 9rem;
+      padding-right: 9rem;
+    }
+  }
+
 @media screen and (max-width: 414px) {
   .nav-links {
     top: 7.8vh;
