@@ -133,10 +133,10 @@ header {
   display: flex;
   padding: 6rem;
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   justify-content: center;
   align-items: flex-start;
-  margin-bottom: 15rem;
+  margin-bottom: 10rem;
 }
 
 .row {
@@ -146,21 +146,19 @@ header {
 
 .grid-text {
   transform: translate(0, 2rem);
-  margin-right: 10rem;
-  margin-left: 15rem;
+  margin-right: 4rem;
 }
 .grid-text h1 {
-  font-size: 3.25rem;
-  margin-bottom: 5rem;
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 .grid-text p {
-  font-size: 2.25rem;
-  margin-bottom: 5rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .square-grid {
   text-align: center;
-  margin-right: 15rem;
 }
 
 .card {
@@ -168,7 +166,7 @@ header {
   justify-content: center;
 }
 
-.square-grid img { 
+.square-grid img {
   width: 20vw;
   height: 35vh;
   object-fit: cover;
