@@ -564,6 +564,9 @@ font-size: 1.75rem;
   .content h1 {
     font-size: 1.9rem;
   }
+  .about{
+    height: 105vh;
+  }
 }
 
 @media only screen and (max-width: 970px) {
@@ -736,6 +739,9 @@ width: 80vw;  }
   .btn{
     padding-left: 9rem;
     padding-right: 9rem;
+  }
+  .grid-text p{
+    margin-bottom: 5rem;
   }
 }
 @media screen and (max-width: 414px) {
