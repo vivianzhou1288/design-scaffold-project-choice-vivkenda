@@ -83,6 +83,7 @@ header {
   width: 4.5rem;
   line-height: 9rem;
   font-family: var(--font-family);
+  font-weight: 900;
 }
 .hotpot img {
   position: relative;
