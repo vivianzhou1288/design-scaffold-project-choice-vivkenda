@@ -206,7 +206,6 @@ transition: opacity 0.6s;
   font-size: 3rem;
   color: black;
   z-index: 1;
-  font-weight: bold;
  /*  text-shadow: 1rem 1rem 1rem rgb(182, 176, 176);   */
   text-decoration: none;
   font-weight: 900;
@@ -498,6 +497,9 @@ margin: 2rem;
   color: white;
   border-radius: 2rem;
   font-size: 1.75rem;
+}
+.line-content h3{
+  color: black;
 }
 .line-content p, h2{
   margin-left: 1rem;
