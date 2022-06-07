@@ -204,17 +204,20 @@ transition: opacity 0.6s;
 }
 .grid-title{
   font-size: 3rem;
-  color: white;
+  color: black;
   z-index: 1;
   font-weight: bold;
-/*   text-shadow: 1rem 1rem 1rem rgb(0, 0, 0); */
+ /*  text-shadow: 1rem 1rem 1rem rgb(182, 176, 176);   */
   text-decoration: none;
   font-weight: 900;
   background-color: lightsalmon;
   padding: 1rem;
   border-radius: 2rem;
 }
-
+.card a{
+  color: black;
+  font-weight: 900;
+}
 /*Holidays Section*/
 .holiday-header{
   font-size: 5.5rem;  
