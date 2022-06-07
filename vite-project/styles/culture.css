@@ -499,7 +499,7 @@ margin: 2rem;
   font-size: 1.75rem;
 }
 .line-content h3{
-  color: black;
+  font-weight: 900;
 }
 .line-content p, h2{
   margin-left: 1rem;
