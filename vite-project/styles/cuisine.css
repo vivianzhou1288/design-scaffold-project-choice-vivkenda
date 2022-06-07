@@ -70,7 +70,7 @@ header {
   top: 7rem;
 }
 header {
-  background: url("/cup.jpg");
+  background: linear-gradient(rgba(36, 35, 35, 0.4), rgba(36, 35, 35, 0.4)), url("/cup.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   max-height: 75%;
