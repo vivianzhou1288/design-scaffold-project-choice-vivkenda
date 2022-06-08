@@ -181,3 +181,14 @@ document.querySelector("#china").addEventListener("click", function () {
   DOMSelectors.about.style.backgroundColor = "#E9967A";
   DOMSelectors.traditions.style.backgroundColor = "#E9967A";
 });
+
+//Smooth Link Transitions
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+});
